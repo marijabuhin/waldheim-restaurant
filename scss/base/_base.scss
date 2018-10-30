@@ -1,0 +1,59 @@
+body {
+	color: $black;
+	font-family: $font-text;
+	line-height: 27px;
+	margin: 0;
+	padding: 0;
+}
+
+.container__content {
+	width: 85%;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: $font-title;
+
+	@include breakpoint ($small) {
+	    font-size: 50px;
+	    line-height: 40px; /* [1] */
+	}
+	
+	@include breakpoint ($large) {
+	    font-size: 32px;
+	    line-height: 50px; /* [1] */
+	}	
+}
+
+h2 {
+	
+	font-family: $font-title;
+
+	@include breakpoint ($small) {
+	    font-size: 22px;
+	}
+	
+	@include breakpoint ($large) {
+	    font-size: 24px;
+	}		
+}
+
+a {
+	color: $white;
+	text-decoration: none;
+	padding: 10px 15px;
+}
+
+a:hover {
+ 	color: $green;
+}
+
+hr {
+	border: 1px solid $white;
+	width: 80%;
+}
+
+#mapid {
+  height: 256px;
+  width: 100%;
+}

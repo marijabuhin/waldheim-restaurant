@@ -1,0 +1,47 @@
+/*------------------------------------*\
+** COLORS
+\*------------------------------------*/
+
+$light-green: #ABC148;
+$green: #7F9425;
+$dark-green: #344A20;
+$white: #FFFFFF;
+$light-gray: #BCBCBC;
+$gray: #8D8D8D;
+$dark-gray: #4D4D4D;
+$black: #212121;
+
+/*------------------------------------*\
+** COLORS
+\*------------------------------------*/
+
+$font-title: 'Scope One', serif;   
+$font-text: 'Khula', sans-serif;
+
+
+/*------------------------------------*\
+** RESPONSIVNESS AND GRID
+\*------------------------------------*/
+
+$small: 0;
+$medium: 640px;
+$large: 1024px;
+$xlarge: 1200px;
+$xxlarge: 1440px;
+
+$breakpoints: (
+	small   : $small,
+	medium  : $medium,
+	large   : $large,
+	xlarge  : $xlarge,
+	xxlarge : $xxlarge
+);
+
+
+/*------------------------------------*\
+** LAYOUT AND GRID
+\*------------------------------------*/
+
+$gutter: 1rem;
+$width: 100rem;
+$text-width: 50rem;

@@ -1,0 +1,140 @@
+/**
+ * 1. Magic nubmer, nema nikakve matematike jednostavno odgovara
+ */
+.container {
+  	@include background('../img/header.png');
+  	background-size: 100% 100%;
+	min-height: 650px;
+}
+
+.header {
+	position: relative;
+	color: $white;
+
+	@include breakpoint ($small) {
+		padding: 50px 0;
+	}
+	
+	@include breakpoint ($large) {
+		padding: 100px 0 50px 0;
+	}
+
+	&__title {
+  		margin-top: 0rem;
+  		position: absolute;
+  		left: 12rem;
+  		right: 12rem;
+  		z-index: 1;
+  		text-align: center;
+  		text-shadow: 2px 2px $black;
+
+  	&--bigger{
+  		font-size: 64px;
+  	}
+
+  	&--smaller{
+  		font-size: 32px;
+  	}
+
+		h1 {
+			@include breakpoint ($small) {
+				line-height: 40px;
+				padding-top: 0;
+			}
+	
+			@include breakpoint ($large) {
+				line-height: 46px; /* [1] */
+				padding-top: 30px;
+			}
+		}
+
+		h2 {
+			padding-bottom: 30px;
+
+			@include breakpoint ($small) {
+				line-height: 32px; /* [1] */
+			}
+	
+			@include breakpoint ($large) {
+				line-height: 38px; /* [1] */
+			}
+		}
+	}
+
+	&__txt {
+			@include breakpoint ($small) {
+				line-height: 25px; /* [1] */
+			}
+	
+			@include breakpoint ($large) {
+				line-height: 25px; /* [1] */
+			}
+
+		  	width: 250px;
+			height: 130px;				
+			background-color: $green;
+			border-radius: 8px;
+			border: solid;
+		  	position: absolute;
+			top: 27rem;
+			left: 28.1rem;
+			z-index: 2;
+			text-align: center;
+			font-family: $font-title;
+			transform: rotate(5deg);
+
+			&--bigger {
+			font-size: 22px;
+			}
+
+			&--smaller {
+			font-size: 12px;
+			}
+
+	}
+
+	&__txt::after{
+			  content: "";
+			  display: block;
+			  width: 114px;
+			  height: 2px;
+			  background-color: $light-gray;
+			  transform: rotate(20deg);
+			  position: absolute;
+			  top: -1.3rem;
+			  left: 55%;
+			}
+
+	&__txt::before{
+			  content: "";
+			  display: block;
+			  width: 114px;
+			  height: 2px;
+			  background-color: $light-gray;
+			  transform: rotate(-20deg);
+			  position: absolute;
+			  top:-1.3rem;
+			  right: 55%;
+			}
+
+	&__img {
+		@include breakpoint ($small) {
+	    display: none;
+		}
+
+		@include breakpoint ($large) {
+			display: block;
+		}
+
+		position: absolute;
+		top: 0;
+		left: 18rem;
+		right: 18rem;
+
+		}
+
+	&__img img {
+		border-radius: 3px;
+	}
+}
+

@@ -1,0 +1,21 @@
+.form {
+	padding: 5px 0;
+
+	&__input {
+		background-color: $light-green;
+		padding: 10px 40px 10px 10px;
+		border: 1px solid $light-green;
+    	border-radius: 3px 0 0 3px;
+    	width: 263px;
+    	height: 28px;
+	}
+}
+
+.textarea {
+	background-color: $light-green;
+	padding: 10px 40px 10px 10px;
+	border: 1px solid $light-green;
+    border-radius: 3px 0 0 3px;
+    width: 542px;
+    height: 68px;
+}

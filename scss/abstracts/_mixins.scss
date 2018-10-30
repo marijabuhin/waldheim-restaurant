@@ -1,0 +1,18 @@
+/*------------------------------------*\
+** MIXIN ZA GENERIRANJE MEDIA QUERYJA
+\*------------------------------------*/
+
+@mixin breakpoint($name) {
+  @media only screen and (min-width : $name) {
+    @content;
+  }
+}
+
+@mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
+    background: {
+        image: url($imgpath);
+        position: $position;
+        repeat: $repeat;
+    }
+
+}

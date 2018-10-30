@@ -1,0 +1,63 @@
+.section {
+	display: flex;
+
+	@include breakpoint ($small) {
+		margin-top: 30px;
+	}
+
+	@include breakpoint ($large) {
+		margin-top: 100px;
+	}
+
+	&__title {
+		text-align: center;
+	}
+
+	&__text {
+		 background-color: $light-gray;
+		 max-width: 30%;
+		 border-radius: 3px;
+
+		@include breakpoint ($small) {
+			padding: 30px;
+
+			&--reverse {
+				order: 1;
+			}
+		}
+		
+		@include breakpoint ($large) {
+			padding: 50px;
+
+			&--reverse {
+				order: 2;
+			}
+		}
+	}
+
+	&__img {
+
+		img {
+			max-width: 70%;
+			border-radius: 3px;
+		}
+
+		@include breakpoint ($small) {
+			&--reverse {
+				order: 2;
+			}
+		}
+		
+		@include breakpoint ($large) {
+			&--reverse {
+				order: 1;
+			}
+		}
+	}
+
+}
+
+.portrait {	
+			max-width: 40%;
+			border-radius: 3px;
+	}

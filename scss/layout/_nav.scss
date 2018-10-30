@@ -1,0 +1,44 @@
+.nav {
+	color: $white !important;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 8px;
+	position: fixed;
+	font-family: $font-title;
+	width: 85%;
+	z-index: 2;
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	
+	&__logo img {
+		width: 40px;
+	}
+
+	&__item li {
+		list-style: none;
+		
+		@include breakpoint ($medium) {
+			display: inline;
+		}
+	}
+
+	&__item a {
+		@include breakpoint ($small) {
+			padding: 5px 10px;
+		}
+
+		@include breakpoint ($medium) {
+			padding: 10px 20px;
+		}
+	}
+}
+
+.nav.scrolled {
+  color: $white;
+  background-color: $black !important;
+  transition: background-color 180ms linear;
+  z-index: 3;
+}
