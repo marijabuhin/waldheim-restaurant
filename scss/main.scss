@@ -6,6 +6,8 @@
 @import 'base/base';
 
 @import 'components/btn';
+@import 'components/carousel';
+@import 'components/gallery';
 @import 'components/form';
 
 @import 'layout/grid';
@@ -14,6 +16,7 @@
 @import 'layout/nav';
 @import 'layout/layout';
 @import 'layout/news';
-@import 'layout/section';
 @import url('https://fonts.googleapis.com/css?family=Khula|Scope+One');
 
+@import 'vendor/owl_carousel';
+@import 'vendor/owl_theme';

@@ -1,46 +1,16 @@
 .grid {
-  display: flex;
-  flex-wrap: wrap;
-}
+  display: grid;
+  grid-template-columns: 8rem repeat(10, minmax(auto, 1fr)) 8rem;
 
-.no-wrap {
-  flex-wrap: no-wrap !important;
-}
-
-.grid--gutters {
-  margin-left: calc( #{$gutter} / -2 );
-  margin-right: calc( #{$gutter} / -2 );
-}
-
-.grid--gutters > .cell {
-  padding-left: calc( #{$gutter} / 2 );
-  padding-right: calc( #{$gutter} / 2 );
-}
-
-.cell {
-  box-sizing: border-box;
-}
-
-.cell--auto {
-  flex: 1;
-}
-
-@for $i from 1 through 12 {
-  .cell--#{$i} {
-    flex-shrink: 0;
-    flex-grow: 0;
-    flex-basis: calc( 100% * ( #{$i} / 12 ) )
+  &--gap {
+    grid-column-gap: 1rem;
   }
 }
 
-@each $key, $value in $breakpoints {
-  @include breakpoint ($value) {
-    @for $i from 1 through 12 {
-      .cell--#{$i}--#{$key} {
-        flex-shrink: 0;
-        flex-grow: 0;
-        flex-basis: calc( 100% * ( #{$i} / 12 ) )
-      }
-    }
+.section {
+  grid-column: 2/span 10;
+
+  &__text {
+    box-shadow: -5px, 5px 20px rgba(141, 141, 141, 0.25);
   }
 }

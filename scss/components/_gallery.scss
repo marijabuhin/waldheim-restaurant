@@ -1,0 +1,7 @@
+.gallery {
+	grid-column: 1/span 12;
+	
+	&--wrap {
+		height: 40vh;
+	}
+}

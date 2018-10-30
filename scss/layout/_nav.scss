@@ -1,11 +1,14 @@
 .nav {
+	grid-column: 1/span 12;
+	width: calc(100% - 16rem); 
 	color: $white !important;
 	display: flex;
 	justify-content: space-between;
+	padding-left: 8rem;
+	padding-right: 8rem;
 	padding-top: 8px;
 	position: fixed;
 	font-family: $font-title;
-	width: 85%;
 	z-index: 2;
 
 	ul {
