@@ -1,7 +1,55 @@
 .carousel {
-	height: 40vh;
+	// important samo zato da pregazi 100% od owla
+	// also ovo ćemo još doradit ako treba kad on stavi tekst kad znamo koliko treba bit
+	width: 624px!important;
+	height: 100%;
+	background-color: $white;
+	box-shadow: -5px 5px 20px 0px rgba(141, 141, 141, 0.25);
+	top: 3rem;
+	left: 8rem;
 
 	&__item {
-		height: 30vh;
+		padding-top: 2rem;
+		padding-bottom: 2.5rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.owl-nav {
+		display: none!important;
+	}
+
+	.owl-dots {
+		position: absolute;
+		top: 100%;
+		left: calc(50% - 32px);
+		margin-top: 1rem;
+	}
+
+	.owl-dot {
+		width: 2rem;
+		height: 3px;
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+
+	.owl-dot span {
+		width: 100%!important;
+		height: 100%!important;
+		background: rgba($light-gray, 0.5);
+		margin: 0!important;
+		transition: .2s;
+	}
+
+	.owl-dot.active span {
+		background: $light-green!important;
+	}
+
+	.owl-dot.active span:hover {
+		background: rgba($light-gray, 1);
+	}
+
+	.owl-dot.active span:focus, span:active, span:hover {
+		outline: none;
 	}
 }

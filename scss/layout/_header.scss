@@ -14,11 +14,11 @@
 	}
 
 	&__title {
-  		margin-top: 0rem;
+  		padding-top: 5rem;
   		position: absolute;
-  		left: 12rem;
-  		right: 12rem;
+  		left: calc(50% - 310.02px);
   		z-index: 1;
+  		line-height: 89px;
   		text-align: center;
   		text-shadow: 2px 2px $black;
 
@@ -39,18 +39,6 @@
 			@include breakpoint ($large) {
 				line-height: 46px; /* [1] */
 				padding-top: 30px;
-			}
-		}
-
-		h2 {
-			padding-bottom: 30px;
-
-			@include breakpoint ($small) {
-				line-height: 32px; /* [1] */
-			}
-	
-			@include breakpoint ($large) {
-				line-height: 38px; /* [1] */
 			}
 		}
 	}

@@ -7,10 +7,41 @@
   }
 }
 
+.testimonial {
+  grid-column: 1/span 10;
+}
+
 .section {
   grid-column: 2/span 10;
 
-  &__text {
-    box-shadow: -5px, 5px 20px rgba(141, 141, 141, 0.25);
+  &__item {
+    display: flex;
   }
+
+  &__text {
+    width: 50%;
+    height: 354px;
+    }
+
+  &__img--wrap {
+    width: calc(50% + 8rem);
+    height: 450px;
+    margin-right: -8rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__portrait {
+    width: 150px;
+    height: 149.58;
+    object-fit: cover;
+    object-position: center;
+  }
+
 }
+

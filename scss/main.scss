@@ -9,6 +9,7 @@
 @import 'components/carousel';
 @import 'components/gallery';
 @import 'components/form';
+@import 'components/testimonial';
 
 @import 'layout/grid';
 @import 'layout/header';
@@ -18,5 +19,5 @@
 @import 'layout/news';
 @import url('https://fonts.googleapis.com/css?family=Khula|Scope+One');
 
-@import 'vendor/owl_carousel';
-@import 'vendor/owl_theme';
+@import 'vendors/owl_carousel';
+@import 'vendors/owl_theme';

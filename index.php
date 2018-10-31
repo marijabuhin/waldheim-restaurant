@@ -59,7 +59,7 @@
 
 			<div class="section__item">
 				<div class="section__text">
-					<div class="carousel carousel-about">
+					<div class="owl-carousel owl-theme carousel">
 					  <div class="carousel__item">
 					  	<h3>Der Gastraum</h3>
 					  	<p>Thanks for stopping by. We are the last authentic Italian restaurant in Milan, serving delicious Italian cuisine cooked by the best chefs. It only takes a few minutes to browse through our website and check out our menu. We hope you'll soon join us for a superb Italian culinary experience.</p>
@@ -77,58 +77,52 @@
 					</div>
 				</div>
 
-				<div class="section__img">
-					
+				<div class="section__img--wrap">
+					<img src="img/location.jpg" alt="restaurant-image" class="section__img" />
 				</div>
 			</div>
 		</section>
 
+		<section class="section">
+		<br><br><br>
+		</section>
+
+		<!--<section>-->
+					<div class="testimonial">
+						<div class="testimonial__img--wrap">
+							<img src="img/cuisine.jpg" alt="cuisine" class="testimonial__img"/>
+						</div>
+						<div class="testimonial__info">
+							<div class="testimonial__text">
+								<div class="testimonial__text--name">
+									<img src="img/Portrait-1.png" alt="portrait" class="testimonial__portrait" />
+									<h4>Full name</h4>
+									<h6>Job title</h6>
+								</div>
+								<div class="testimonial__text--details">
+									<h1>Was treibt mich an...</h1>
+									<p>nach langer überlegung dachte ich mir ich möchte es wagen mich selbstständig zu machen. so habe ich mich entschlossen diesen schritt zu gehen und habe nach einer grund sanierung im xxxxxx 2007 das Waldheim wieder eröffnet. heute bin ich froh das getan zu haben. es macht mir viel freude meine Gäste mit gut bürgerlichen speisen zu verwöhnen</p>
+								</div>
+							</div>
+						</div>
+					</div>
+		<!--</section>-->
+	</div>
+
 		<section id="galerie" class="gallery">
 			<h2>~ Gallery ~</h2>
 
-			<div class="owl-carousel owl-theme gallery--wrap">
+			<!--<div class="owl-carousel owl-theme gallery--wrap">
 		 		<img src="img/gallery.png" alt="gallery_pic" class="item" />
 		 		<img src="img/header.png" alt="gallery_pic" class="item" />
-		 	</div>
+		 	</div>-->
 		</section>
 
 	</div>
 
-
-		
-
-	
-
-	<!--<div id="restaurant" class="section">
-		<div class="section__title">
-			<h1>Restaurant</h1>
-		</div>
-		<div class="section__text">
-			<h1>Der Gastraum</h1>
-			<p>Thanks for stopping by. We are the last authentic Italian restaurant in Milan, serving delicious Italian cuisine cooked by the best chefs. It only takes a few minutes to browse through our website and check out our menu. We hope you'll soon join us for a superb Italian culinary experience.</p>
-			<h2>A Unique Experience</h2>
-			<p>Thanks for stopping by. We are the last authentic Italian restaurant in Milan, serving delicious Italian cuisine cooked by the best chefs. It only takes a few minutes to browse through our website and check out our menu. We hope you'll soon join us for a superb Italian culinary experience.</p>
-		</div>
-		<div class="section__img">
-				<img src="img/location.jpg" alt="location" />
-		</div>
-	</div>
-
-	<div class="section">
-			<div class="section__img">
-				<img src="img/cuisine.jpg" alt="cuisine" />
-			</div>
-			<div class="section__text">
-				<img class="portrait" src="img/Portrait-1.png" alt="portrait" />
-				<h1>Was treibt mich an...</h1>
-				<p>nach langer überlegung dachte ich mir ich möchte es wagen mich selbstständig zu machen. so habe ich mich entschlossen diesen schritt zu gehen und habe nach einer grund sanierung im xxxxxx 2007 das Waldheim wieder eröffnet. heute bin ich froh das getan zu haben. es macht mir viel freude meine Gäste mit gut bürgerlichen speisen zu verwöhnen</p>
-			</div>
-	</div>-->
-
-
 	<div id="speisekarte" class="menu">
 		<div class="section__title">
-			<h1>~ Unsere Speisekarte ~</h1>
+			<h2>~ Unsere Speisekarte ~</h2>
 		</div>
 		<!--<div class="menu__list">
 		    <div class="item"><img src="img/SPEISEKARTE_1.png" alt="SPEISEKARTE1" /></div>
@@ -141,75 +135,61 @@
 
 	<div id="kontakt" class="contact">
 		<div class="section__title">
-			<h1>~ Kontakt/Anfahrt ~</h1>
+			<h2>~ Kontakt/Anfahrt ~</h2>
 		</div>
 		<div id="mapid"></div>	
 	</div>
 
-	<div class="footer">
-		<div class="footer__info">
-			<div class="footer__title">
-				<h1>Contact Us</h1>
+	<footer>
+		<div class="footer">
+			<div class="footer__info">
+				<div class="footer__title">
+					<h1>Contact Us</h1>
+				</div>
+				<div class="footer__text">
+					<img src="img/icon_marker.png" alt="marker" />
+					<p>Eingarten 1, 74211 Leingarten</p>
+					<img src="img/icon_phone.png" alt="phone" />
+					<p>+49 (0)7131 6429757</p>
+					<img src="img/icon_email.png" alt="email" />
+					<p>info@gastro-waldheim.de</p>
+				</div>
 			</div>
-			<div class="footer__text">
-				<img src="img/icon_marker.png" alt="marker" />
-				<p>Eingarten 1, 74211 Leingarten</p>
-				<img src="img/icon_phone.png" alt="phone" />
-				<p>+49 (0)7131 6429757</p>
-				<img src="img/icon_email.png" alt="email" />
-				<p>info@gastro-waldheim.de</p>
+			<div class="form">
+				<div class="input">
+					<label for="name">Name</label>
+					<input class="form__input" placeholder="Name" type="text" name="Name">
+				</div>
+				<br/>
+				<div class="input">
+					<label for="email">E-mail</label>
+					<input class="form__input" placeholder="E-mail" type="email" id="e-mail" name="e-mail" />
+				</div>
+				<br/>
+				<div class="input">
+					<label for="subject">Subject</label>
+					<textarea class="textarea" placeholder="This is a message." ></textarea>
+				</div>
+				<br/>
+				<div class="button">
+					<button class="btn">SEND</button>
+				</div>
 			</div>
 		</div>
-		<div class="form">
-			<div class="input">
-				<p>Name</p>
-				<input class="form__input" placeholder="Name" type="text" name="Name">
-			</div>
-			<br/>
-			<div class="input">
-				<p>E-mail</p>
-				<input class="form__input" placeholder="E-mail" type="email" id="e-mail" name="e-mail" />
-			</div>
-			<br/>
-			<div class="input">
-				<p>Message</p>
-				<textarea class="textarea" placeholder="This is a message." ></textarea>
-			</div>
-			<br/>
-			<div class="button">
-				<button class="btn">SEND</button>
-			</div>
-		</div>
-		<hr />
 		<div class="footer__rights">
-			<p class="text-center">Copyright &copy; 2018 Waldheim Leingarten</p>
-			<a class="nav-link" href="impressum.html">Impressum</a>
-			<a class="nav-link" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
+				<hr />
+				<p class="text-center">Copyright &copy; 2018 Waldheim Leingarten</p>
+				<a class="nav-link" href="impressum.html">Impressum</a>
+				<a class="nav-link" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
 		</div>
-	</div>
+	</footer>
 
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/jquery-3.3.1.js"></script>
 	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
 	   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
 	   crossorigin=""></script>
-	<script src="js/owl_carousel.min.js"></script>
+	<script src="js/owl_carousel.js"></script>
 	<script src="js/carousel.js"></script>
-	<script>
-	   var map = L.map('mapid').setView([49.1342171, 9.1158031,19], 15);
-		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	    attribution: '&copy;<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-		}).addTo(map);
-		L.marker([49.1342171, 9.1158031,19]).addTo(map)
-	    .bindPopup('<b>Café Bistro Waldheim</b><br>Egarten 1, 74211 Leingarten')
-	    .openPopup()
-	</script>
-	<script>
-		$(function () {
-		$(document).scroll(function () {
-		var $nav = $(".nav");
-		$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-		});
-		});
-	</script>
+	<script src="js/map.js"></script>
+	<script src="js/nav.js"></script>
 </body>
