@@ -81,13 +81,33 @@
 					<img src="img/location.jpg" alt="restaurant-image" class="section__img" />
 				</div>
 			</div>
+
+			<!-- novo -->
+			<div class="section__item">
+				<div class="section__img--wrap">
+					<img src="img/cuisine.jpg" alt="restaurant-image" class="section__img" />
+				</div>
+
+				<div class="section__text">
+					<div class="testimonial">
+						<div class="testimonial__info">
+							<img src="img/Portrait-1.png" alt="portrait" class="testimonial__portrait" />
+							<h4>Full name</h4>
+							<h6>Job title</h6>
+						</div>
+						
+						<div class="testimonial__text">
+							<h1>Was treibt mich an...</h1>
+							<p>nach langer überlegung dachte ich mir ich möchte es wagen mich selbstständig zu machen. so habe ich mich entschlossen diesen schritt zu gehen und habe nach einer grund sanierung im xxxxxx 2007 das Waldheim wieder eröffnet. heute bin ich froh das getan zu haben. es macht mir viel freude meine Gäste mit gut bürgerlichen speisen zu verwöhnen</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- novo kraj -->
 		</section>
 
-		<section class="section">
-		<br><br><br>
-		</section>
 
-		<!--<section>-->
+		<!-- staro -->
+		<!--<section>
 					<div class="testimonial">
 						<div class="testimonial__img--wrap">
 							<img src="img/cuisine.jpg" alt="cuisine" class="testimonial__img"/>
@@ -99,14 +119,14 @@
 									<h4>Full name</h4>
 									<h6>Job title</h6>
 								</div>
-								<div class="testimonial__text--details">
+								<div class="testimonial__text--">
 									<h1>Was treibt mich an...</h1>
 									<p>nach langer überlegung dachte ich mir ich möchte es wagen mich selbstständig zu machen. so habe ich mich entschlossen diesen schritt zu gehen und habe nach einer grund sanierung im xxxxxx 2007 das Waldheim wieder eröffnet. heute bin ich froh das getan zu haben. es macht mir viel freude meine Gäste mit gut bürgerlichen speisen zu verwöhnen</p>
 								</div>
 							</div>
 						</div>
 					</div>
-		<!--</section>-->
+		</section>-->
 	</div>
 
 		<section id="galerie" class="gallery">

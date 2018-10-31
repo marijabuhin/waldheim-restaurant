@@ -7,10 +7,6 @@
   }
 }
 
-.testimonial {
-  grid-column: 1/span 10;
-}
-
 .section {
   grid-column: 2/span 10;
 
@@ -23,7 +19,7 @@
     height: 354px;
     }
 
-  &__img--wrap {
+ &__img--wrap {
     width: calc(50% + 8rem);
     height: 450px;
     margin-right: -8rem;
@@ -43,5 +39,11 @@
     object-position: center;
   }
 
+&__item:nth-child(2) { 
+   .section__img--wrap { 
+    margin-left: 0;
+    margin-right: -8rem;
+    } 
+    }
 }
 
