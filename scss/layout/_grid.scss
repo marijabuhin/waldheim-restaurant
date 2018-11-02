@@ -9,6 +9,8 @@
 
 .section {
   grid-column: 2/span 10;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
   &__item {
     display: flex;
@@ -22,7 +24,7 @@
  &__img--wrap {
     width: calc(50% + 8rem);
     height: 450px;
-    margin-right: -8rem;
+    margin-left: -8rem;
   }
 
   &__img {
@@ -32,12 +34,7 @@
     object-position: center;
   }
 
-  &__portrait {
-    width: 150px;
-    height: 149.58;
-    object-fit: cover;
-    object-position: center;
-  }
+
 
 &__item:nth-child(2) { 
    .section__img--wrap { 

@@ -11,6 +11,17 @@
 	font-family: $font-title;
 	z-index: 2;
 
+	a {
+	color: $white ;
+	text-decoration: none;
+	padding: 10px 15px;
+	}
+
+	a:hover {
+	 	color: $green !important;
+	}  
+
+
 	ul {
 		margin: 0;
 		padding: 0;
@@ -38,6 +49,7 @@
 		}
 	}
 }
+
 
 .nav.scrolled {
   color: $white;

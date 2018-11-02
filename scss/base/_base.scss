@@ -6,52 +6,84 @@ body {
 	padding: 0;
 }
 
-.container__content {
-	width: 85%;
-	margin: 0 auto;
-}
 
 h1 {
 	font-family: $font-title;
 
 	@include breakpoint ($small) {
-	    font-size: 50px;
-	    line-height: 40px; /* [1] */
+	    font-size: 56px;
 	}
 	
 	@include breakpoint ($large) {
-	    font-size: 32px;
-	    line-height: 50px; /* [1] */
+	    font-size: 64px;
+
 	}	
 }
 
 h2 {
 	
 	font-family: $font-title;
+	text-align: center;
 
 	@include breakpoint ($small) {
-	    font-size: 22px;
+	    font-size: 40px;
 	}
 	
 	@include breakpoint ($large) {
-	    font-size: 24px;
+	    font-size: 48px;
+
 	}		
 }
 
-a {
-	color: $white;
-	text-decoration: none;
-	padding: 10px 15px;
+h3 {
+	
+	font-family: $font-title;
+
+	@include breakpoint ($small) {
+	    font-size: 26px;
+	}
+	
+	@include breakpoint ($large) {
+	    font-size: 32px;
+	}		
 }
 
-a:hover {
- 	color: $green;
+h4 {
+	
+	font-family: $font-title;
+
+	@include breakpoint ($small) {
+	    font-size: 18px;
+	}
+	
+	@include breakpoint ($large) {
+	    font-size: 20px;
+	}		
 }
+
+h5 {
+	font-size: 16px;
+}
+
+h6{
+	font-size:12px;
+}
+
+a {
+		color: $green;
+		text-decoration: none;
+	}
+
+a:hover {
+		color: $gray;
+	}
+
 
 hr {
 	border: 1px solid $white;
-	width: 80%;
+	width:100%;
 }
+
 
 #mapid {
   height: 256px;

@@ -1,16 +1,14 @@
 .testimonial {
 	display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
 	padding-top: 2rem;
 	padding-bottom: 2.5rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
-	top: 3rem;
-	left: 8rem;
-  	width: 624px!important;
-    height: 100%;
-    box-shadow: 5px 5px 20px 0px rgba(141, 141, 141, 0.25);
-    background-color: $white;
+  width: 624px!important;
+  box-shadow: 5px 5px 20px 0px rgba(141, 141, 141, 0.25);
+  background-color: $white;
+  z-index: 1;
 
   &__img {
     width: 100%;
@@ -26,4 +24,12 @@
     object-position: center;
   }
 
+  &__info {
+  text-align: center;
+  }
+
+
+  &__text{
+  padding-left: 2rem;
+  }
 }

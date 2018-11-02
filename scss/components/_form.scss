@@ -1,21 +1,25 @@
 .form {
 	padding: 5px 0;
+	width: 49%;
+	displax: flex;
+	flex-wrap: wrap;
 
 	&__input {
-		background-color: $light-green;
+		background-color: $light-green-form;
 		padding: 10px 40px 10px 10px;
-		border: 1px solid $light-green;
+		border: 1px solid $light-green-form;
     	border-radius: 3px 0 0 3px;
-    	width: 263px;
+    	width: 49%;
     	height: 28px;
 	}
 }
 
-.textarea {
-	background-color: $light-green;
+.txt-area {
+	background-color: rgba(171, 193, 72, 0.3);
 	padding: 10px 40px 10px 10px;
-	border: 1px solid $light-green;
+	border: 1px solid $light-green-form;
     border-radius: 3px 0 0 3px;
-    width: 542px;
+    width: 100%;
     height: 68px;
+    font-family: $font-text;
 }

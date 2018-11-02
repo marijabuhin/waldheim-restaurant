@@ -29,7 +29,7 @@
 			</ul>
 		</nav>
 
-		<header class="header">
+		<header id="header" class="header">
 			<div class="header__title">
 				<h1 class="header__title--bigger">Waldheim Leingarten</h1>
 				<h3 class="header__title--smaller">Café - Restaurant - Bistro</h3>
@@ -82,7 +82,10 @@
 				</div>
 			</div>
 
-			<!-- novo -->
+			<div class="section">
+				<br/ > <br/ > <br/ >
+			</div>
+			
 			<div class="section__item">
 				<div class="section__img--wrap">
 					<img src="img/cuisine.jpg" alt="restaurant-image" class="section__img" />
@@ -97,83 +100,47 @@
 						</div>
 						
 						<div class="testimonial__text">
-							<h1>Was treibt mich an...</h1>
+							<h3>Was treibt mich an...</h3>
 							<p>nach langer überlegung dachte ich mir ich möchte es wagen mich selbstständig zu machen. so habe ich mich entschlossen diesen schritt zu gehen und habe nach einer grund sanierung im xxxxxx 2007 das Waldheim wieder eröffnet. heute bin ich froh das getan zu haben. es macht mir viel freude meine Gäste mit gut bürgerlichen speisen zu verwöhnen</p>
 						</div>
 					</div>
 				</div>
-			</div><!-- novo kraj -->
+			</div>
 		</section>
-
-
-		<!-- staro -->
-		<!--<section>
-					<div class="testimonial">
-						<div class="testimonial__img--wrap">
-							<img src="img/cuisine.jpg" alt="cuisine" class="testimonial__img"/>
-						</div>
-						<div class="testimonial__info">
-							<div class="testimonial__text">
-								<div class="testimonial__text--name">
-									<img src="img/Portrait-1.png" alt="portrait" class="testimonial__portrait" />
-									<h4>Full name</h4>
-									<h6>Job title</h6>
-								</div>
-								<div class="testimonial__text--">
-									<h1>Was treibt mich an...</h1>
-									<p>nach langer überlegung dachte ich mir ich möchte es wagen mich selbstständig zu machen. so habe ich mich entschlossen diesen schritt zu gehen und habe nach einer grund sanierung im xxxxxx 2007 das Waldheim wieder eröffnet. heute bin ich froh das getan zu haben. es macht mir viel freude meine Gäste mit gut bürgerlichen speisen zu verwöhnen</p>
-								</div>
-							</div>
-						</div>
-					</div>
-		</section>-->
-	</div>
 
 		<section id="galerie" class="gallery">
 			<h2>~ Gallery ~</h2>
 
-			<!--<div class="owl-carousel owl-theme gallery--wrap">
+			<div class="owl-carousel owl-theme gallery--wrap">
 		 		<img src="img/gallery.png" alt="gallery_pic" class="item" />
 		 		<img src="img/header.png" alt="gallery_pic" class="item" />
-		 	</div>-->
+		 	</div>
 		</section>
 
-	</div>
+		<section id="speisekarte" class="speisekarte">
+				<h2>~ Unsere Speisekarte ~</h2>
+			<!--<div class="menu__list">
+			    <div class="item"><img src="img/SPEISEKARTE_1.png" alt="SPEISEKARTE1" /></div>
+			    <div class="item"><img src="img/SPEISEKARTE_2.png" alt="SPEISEKARTE2" /></div>
+			    <div class="item"><img src="img/SPEISEKARTE_3.png" alt="SPEISEKARTE3" /></div>
+			    <div class="item"><img src="img/SPEISEKARTE_4.png" alt="SPEISEKARTE4" /></div>
+			    <div class="item"><img src="img/SPEISEKARTE_5.png" alt="SPEISEKARTE5" /></div>
+			</div>-->
+		</section>
 
-	<div id="speisekarte" class="menu">
-		<div class="section__title">
-			<h2>~ Unsere Speisekarte ~</h2>
+		<div id="kontakt" class="contact">
+				<h2>~ Kontakt/Anfahrt ~</h2>
+			<div id="mapid"></div>	
 		</div>
-		<!--<div class="menu__list">
-		    <div class="item"><img src="img/SPEISEKARTE_1.png" alt="SPEISEKARTE1" /></div>
-		    <div class="item"><img src="img/SPEISEKARTE_2.png" alt="SPEISEKARTE2" /></div>
-		    <div class="item"><img src="img/SPEISEKARTE_3.png" alt="SPEISEKARTE3" /></div>
-		    <div class="item"><img src="img/SPEISEKARTE_4.png" alt="SPEISEKARTE4" /></div>
-		    <div class="item"><img src="img/SPEISEKARTE_5.png" alt="SPEISEKARTE5" /></div>
-		</div>-->
-	</div>
 
-	<div id="kontakt" class="contact">
-		<div class="section__title">
-			<h2>~ Kontakt/Anfahrt ~</h2>
-		</div>
-		<div id="mapid"></div>	
-	</div>
-
-	<footer>
-		<div class="footer">
+		<footer class="footer">
 			<div class="footer__info">
-				<div class="footer__title">
-					<h1>Contact Us</h1>
-				</div>
-				<div class="footer__text">
-					<img src="img/icon_marker.png" alt="marker" />
-					<p>Eingarten 1, 74211 Leingarten</p>
-					<img src="img/icon_phone.png" alt="phone" />
-					<p>+49 (0)7131 6429757</p>
-					<img src="img/icon_email.png" alt="email" />
-					<p>info@gastro-waldheim.de</p>
-				</div>
+					<h3>Contact Us</h3>
+				<ul class="footer__text">
+					<li><img src="img/icon_marker.png" alt="marker" class="icon" /> Eingarten 1, 74211 Leingarten</li>
+					<li><img src="img/icon_phone.png" alt="phone" class="icon" /> +49 (0)7131 6429757</li>
+					<li><img src="img/icon_email.png" alt="email" class="icon" /> <a href="mailto:info@gastro-waldheim.de">info@gastro-waldheim.de</a></li>
+				</ul>
 			</div>
 			<div class="form">
 				<div class="input">
@@ -187,22 +154,25 @@
 				</div>
 				<br/>
 				<div class="input">
-					<label for="subject">Subject</label>
-					<textarea class="textarea" placeholder="This is a message." ></textarea>
+					<label for="message">Message</label>
+					<textarea class="txt-area" placeholder="Message." ></textarea>
 				</div>
 				<br/>
 				<div class="button">
 					<button class="btn">SEND</button>
 				</div>
 			</div>
-		</div>
-		<div class="footer__rights">
+			<div class="footer__rights">
 				<hr />
-				<p class="text-center">Copyright &copy; 2018 Waldheim Leingarten</p>
-				<a class="nav-link" href="impressum.html">Impressum</a>
-				<a class="nav-link" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
-		</div>
-	</footer>
+					<span class="text-center">Copyright &copy; 2018 Waldheim Leingarten</span> |
+					<a class="nav-link" href="impressum.html">Impressum</a> |
+					<a class="nav-link" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
+				
+					<a href="#header">Back to top</a> 
+				</div>
+			</div>
+		</footer>
+	</div>
 
 	<script src="js/jquery-3.3.1.js"></script>
 	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"

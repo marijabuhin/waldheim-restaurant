@@ -6,12 +6,6 @@
 	position: relative;
 	color: $white;
 
-	@include breakpoint ($small) {
-	}
-	
-	@include breakpoint ($large) {
-
-	}
 
 	&__title {
   		padding-top: 5rem;
