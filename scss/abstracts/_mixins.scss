@@ -1,6 +1,4 @@
-/*------------------------------------*\
-** MIXIN ZA GENERIRANJE MEDIA QUERYJA
-\*------------------------------------*/
+// MIXIN ZA GENERIRANJE MEDIA QUERYJA
 
 @mixin breakpoint($name) {
   @media only screen and (min-width : $name) {
@@ -8,11 +6,35 @@
   }
 }
 
-@mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
-    background: {
-        image: url($imgpath);
-        position: $position;
-        repeat: $repeat;
-    }
 
+// MIXIN ZA RESPONZIVNU TIPOGRAFIJU
+
+@mixin font-size($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-size in $fs-map {
+    @if $fs-breakpoint == small {
+      //@include make-font-size($fs-size);
+    }
+    @else {
+      // If $fs-size is a key that exists in
+      // $fs-breakpoints, use the value
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        //@include make-font-size($fs-size);
+      }
+    }
+  }
+}
+
+
+// MIXIN ZA BACKGROUND IMG
+
+@mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
+  
+  background: {
+  	image: url($imgpath);
+    position: $position;
+    repeat: $repeat;
+  }
 }

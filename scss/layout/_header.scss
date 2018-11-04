@@ -6,9 +6,8 @@
 	position: relative;
 	color: $white;
 
-
 	&__title {
-  		padding-top: 5rem;
+  		padding-top: 7rem;
   		position: absolute;
   		left: calc(50% - 310.02px);
   		z-index: 1;
@@ -56,41 +55,31 @@
 			border-radius: 8px;
 			border: solid;		
 			text-align: center;
-			font-family: $font-title;
 			transform: rotate(5deg);
-
-			&--bigger {
-			font-size: 22px;
-			}
-
-			&--smaller {
-			font-size: 12px;
-			}
-
 	}
 
 	&__txt::after{
-			  content: "";
-			  display: block;
-			  width: 114px;
-			  height: 2px;
-			  background-color: $light-gray;
-			  transform: rotate(20deg);
-			  position: absolute;
-			  top: -1.3rem;
-			  left: 55%;
+			 content: "";
+		    display: block;
+		    width: 113px;
+		    height: 1px;
+		    background-color: #BCBCBC;
+		    transform: rotate(20deg);
+		    position: absolute;
+		    top: -1.3rem;
+		    left: 48%;
 			}
 
 	&__txt::before{
-			  content: "";
-			  display: block;
-			  width: 114px;
-			  height: 2px;
-			  background-color: $light-gray;
-			  transform: rotate(-20deg);
-			  position: absolute;
-			  top:-1.3rem;
-			  right: 55%;
+			    content: "";
+			    display: block;
+			    width: 110px;
+			    height: 1px;
+			    background-color: #BCBCBC;
+			    transform: rotate(-20deg);
+			    position: absolute;
+			    top: -1.3rem;
+			    right: 50%;
 			}
 
 	&__img {

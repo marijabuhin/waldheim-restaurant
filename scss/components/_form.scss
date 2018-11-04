@@ -1,25 +1,49 @@
 .form {
-	padding: 5px 0;
-	width: 49%;
-	displax: flex;
+	width: 49%;	
+	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 4rem;
 
-	&__input {
-		background-color: $light-green-form;
-		padding: 10px 40px 10px 10px;
-		border: 1px solid $light-green-form;
-    	border-radius: 3px 0 0 3px;
-    	width: 49%;
-    	height: 28px;
+	&__label {
+		display: block;
+		color: $light-gray;
+		font-family: $font-title;
+		font-size: 0.75rem;
+		line-height: 0.875rem;
 	}
-}
 
-.txt-area {
-	background-color: rgba(171, 193, 72, 0.3);
-	padding: 10px 40px 10px 10px;
-	border: 1px solid $light-green-form;
-    border-radius: 3px 0 0 3px;
-    width: 100%;
-    height: 68px;
-    font-family: $font-text;
+	&__field {
+		width: 49%;
+		margin-bottom: 1rem;
+
+		&:nth-child(3) {
+			width: 100%;
+			margin-bottom: 1.25rem;
+		}
+	}
+
+	&__input, &__textarea {
+		width: calc(100% - 20px);
+		color: $white;
+		background-color: rgba($light-green, 0.3);
+		border: none;
+		line-height: 1.25rem;
+		padding: 6px 10px;
+
+		&:focus {
+			background-color: rgba($light-green, 0.3);
+			outline: none;
+		}
+	}
+
+	&__textarea {
+		resize: none;
+	}
+
+	&__btn {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+	}
 }

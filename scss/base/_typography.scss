@@ -1,0 +1,61 @@
+// HEADINGS
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-title;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+
+h1 {
+  @include font-size($h1-sizes);
+}
+
+h2 {
+  @include font-size($h2-sizes);
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+h3 {
+  @include font-size($h3-sizes);
+}
+
+h4 {
+  @include font-size($h4-sizes);
+}
+
+h5 {
+  @include font-size($h5-sizes);
+}
+
+h6 {
+  @include font-size($h6-sizes);
+}
+
+
+
+// PARAGRAPHS
+
+p {
+  font-size: $font-size;
+  font-family: $font-text;
+  margin-bottom: 1rem;
+}
+
+
+// LINKS
+
+.link {
+  color: $light-green;
+  outline-width: 0;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.link:hover, .link:focus, .link:active {
+  
+}
+
+

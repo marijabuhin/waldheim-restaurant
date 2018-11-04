@@ -1,9 +1,6 @@
-/*------------------------------------*\
-** COLORS
-\*------------------------------------*/
 
+// COLORS
 
-$light-green-form: rgba(171, 193, 72, 0.3);
 $light-green: #ABC148;
 $green: #7F9425;
 $dark-green: #344A20;
@@ -13,37 +10,63 @@ $gray: #8D8D8D;
 $dark-gray: #4D4D4D;
 $black: #212121;
 
-/*------------------------------------*\
-** COLORS
-\*------------------------------------*/
 
+// FONTS
+
+@import url('https://fonts.googleapis.com/css?family=Khula|Scope+One');
+
+$font-size: 16px;
 $font-title: 'Scope One', serif;   
 $font-text: 'Khula', sans-serif;
 
 
-/*------------------------------------*\
-** RESPONSIVNESS AND GRID
-\*------------------------------------*/
+// BREAKPOINTS
 
 $small: 0;
 $medium: 640px;
 $large: 1024px;
-$xlarge: 1200px;
-$xxlarge: 1440px;
 
 $breakpoints: (
-	small   : $small,
-	medium  : $medium,
-	large   : $large,
-	xlarge  : $xlarge,
-	xxlarge : $xxlarge
+	small: $small,
+	medium: $medium,
+	large: $large
 );
 
 
-/*------------------------------------*\
-** LAYOUT AND GRID
-\*------------------------------------*/
+// HEADINGS
 
-$gutter: 1rem;
-$width: 100rem;
-$text-width: 50rem;
+$h1-sizes: (
+  small: (56px, 1.2),
+  medium: (64px, 1.2),
+  large: (64px, 1.2)
+);
+
+$h2-sizes: (
+  small: (40px, 1.2),
+  medium: (48px, 1.2),
+  large: (48px, 1.2)
+);
+
+$h3-sizes: (
+  small: (26px, 1.2),
+  medium: (32px, 1.2),
+  large: (32px, 1.2)
+);
+
+$h4-sizes: (
+  small: (18px, 1.2),
+  medium: (20px, 1.2),
+  large: (20px, 1.2)
+);
+
+$h5-sizes: (
+  small: (19px, 1.2),
+  medium: (19px, 1.2),
+  large: (19px, 1.2)
+);
+
+$h6-sizes: (
+  small: (12px, 1.2),
+  medium: (12px, 1.2),
+  large: (12px, 1.2)
+);

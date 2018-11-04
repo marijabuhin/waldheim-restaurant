@@ -1,11 +1,13 @@
 .btn {
-	background-color: $green; 	
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    cursor: pointer;
-	}
+  display: inline-block;
+  color: white;
+  background-color: $green;     
+  border: none;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 6px 16px;
+}

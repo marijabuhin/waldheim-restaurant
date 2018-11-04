@@ -40,9 +40,9 @@
 			</div>
 
 			<div class="header__txt">
-				<p class="header__txt--larger">Wir haben offen</p>
-				<p class="header__txt--smaller">von Mittwoch - Samstag ab 17:00<br/>
-				am Sonntagen & Feiertagen ab 11:30</p>
+				<h4>Wir haben offen</h4>
+				<h6>von Mittwoch - Samstag ab 17:00<br/>
+				am Sonntagen &amp; Feiertagen ab 11:30<h6>
 			</div>
 		</header>
 
@@ -59,7 +59,7 @@
 
 			<div class="section__item">
 				<div class="section__text">
-					<div class="owl-carousel owl-theme carousel">
+					<div class="owl-carousel owl-theme carousel carousel--about">
 					  <div class="carousel__item">
 					  	<h3>Der Gastraum</h3>
 					  	<p>Thanks for stopping by. We are the last authentic Italian restaurant in Milan, serving delicious Italian cuisine cooked by the best chefs. It only takes a few minutes to browse through our website and check out our menu. We hope you'll soon join us for a superb Italian culinary experience.</p>
@@ -81,10 +81,6 @@
 					<img src="img/location.jpg" alt="restaurant-image" class="section__img" />
 				</div>
 			</div>
-
-			<div class="section">
-				<br/ > <br/ > <br/ >
-			</div>
 			
 			<div class="section__item">
 				<div class="section__img--wrap">
@@ -94,7 +90,7 @@
 				<div class="section__text">
 					<div class="testimonial">
 						<div class="testimonial__info">
-							<img src="img/Portrait-1.png" alt="portrait" class="testimonial__portrait" />
+							<img src="img/Portrait-1.png" alt="portrait" class="testimonial__img" />
 							<h4>Full name</h4>
 							<h6>Job title</h6>
 						</div>
@@ -109,66 +105,81 @@
 		</section>
 
 		<section id="galerie" class="gallery">
-			<h2>~ Gallery ~</h2>
+			<h2>~ Galerie ~</h2>
 
-			<div class="owl-carousel owl-theme gallery--wrap">
-		 		<img src="img/gallery.png" alt="gallery_pic" class="item" />
-		 		<img src="img/header.png" alt="gallery_pic" class="item" />
+			<div class="owl-carousel owl-theme carousel--gallery">
+		 		<div class="gallery__img--wrap"><img src="img/gallery.png" alt="gallery_pic" class="gallery__img" /></div>
+		 		<div class="gallery__img--wrap"><img src="img/header.png" alt="gallery_pic" class="gallery__img" /></div>
 		 	</div>
 		</section>
 
-		<section id="speisekarte" class="speisekarte">
-				<h2>~ Unsere Speisekarte ~</h2>
-			<!--<div class="menu__list">
-			    <div class="item"><img src="img/SPEISEKARTE_1.png" alt="SPEISEKARTE1" /></div>
-			    <div class="item"><img src="img/SPEISEKARTE_2.png" alt="SPEISEKARTE2" /></div>
-			    <div class="item"><img src="img/SPEISEKARTE_3.png" alt="SPEISEKARTE3" /></div>
-			    <div class="item"><img src="img/SPEISEKARTE_4.png" alt="SPEISEKARTE4" /></div>
-			    <div class="item"><img src="img/SPEISEKARTE_5.png" alt="SPEISEKARTE5" /></div>
-			</div>-->
+		<section id="speisekarte" class="section">
+			<h2>~ Unsere Speisekarte ~</h2>
+
+			<div class="owl-carousel owl-theme carousel carousel--menu">
+			  <div class="carousel__item">
+			  	<img src="img/speisekarte_1.png" alt="speisekarte" class="carousel__img" />
+			  </div>
+
+			  <div class="carousel__item">
+			  	<img src="img/speisekarte_2.png" alt="speisekarte" class="carousel__img" />
+			  </div>
+
+			  <div class="carousel__item">
+			  	<img src="img/speisekarte_3.png" alt="speisekarte" class="carousel__img" />
+			  </div>
+
+			  <div class="carousel__item">
+			  	<img src="img/speisekarte_4.png" alt="speisekarte" class="carousel__img" />
+			  </div>
+			  
+			  <div class="carousel__item">
+			  	<img src="img/speisekarte_5.png" alt="speisekarte" class="carousel__img" />
+			  </div>
+			</div>
 		</section>
 
-		<div id="kontakt" class="contact">
-				<h2>~ Kontakt/Anfahrt ~</h2>
-			<div id="mapid"></div>	
-		</div>
+		<footer id="kontakt" class="footer">
+			<h2>~ Kontakt/Anfahrt ~</h2>
 
-		<footer class="footer">
-			<div class="footer__info">
+			<div id="mapid" class="map"></div>
+
+			<div class="footer__info--wrap">
+				<div class="footer__info">
 					<h3>Contact Us</h3>
-				<ul class="footer__text">
-					<li><img src="img/icon_marker.png" alt="marker" class="icon" /> Eingarten 1, 74211 Leingarten</li>
-					<li><img src="img/icon_phone.png" alt="phone" class="icon" /> +49 (0)7131 6429757</li>
-					<li><img src="img/icon_email.png" alt="email" class="icon" /> <a href="mailto:info@gastro-waldheim.de">info@gastro-waldheim.de</a></li>
-				</ul>
-			</div>
-			<div class="form">
-				<div class="input">
-					<label for="name">Name</label>
-					<input class="form__input" placeholder="Name" type="text" name="Name">
-				</div>
-				<br/>
-				<div class="input">
-					<label for="email">E-mail</label>
-					<input class="form__input" placeholder="E-mail" type="email" id="e-mail" name="e-mail" />
-				</div>
-				<br/>
-				<div class="input">
-					<label for="message">Message</label>
-					<textarea class="txt-area" placeholder="Message." ></textarea>
-				</div>
-				<br/>
-				<div class="button">
-					<button class="btn">SEND</button>
-				</div>
-			</div>
-			<div class="footer__rights">
-				<hr />
-					<span class="text-center">Copyright &copy; 2018 Waldheim Leingarten</span> |
-					<a class="nav-link" href="impressum.html">Impressum</a> |
-					<a class="nav-link" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
-				
-					<a href="#header">Back to top</a> 
+					<ul class="footer__text">
+						<li><img src="img/icon_marker.png" alt="marker" class="footer__icon"/> Egarten 1, 74211 Leingarten</li>
+						<li><img src="img/icon_phone.png" alt="phone" class="footer__icon" /> +49 (0)7131 6429757</li>
+						<li><img src="img/icon_email.png" alt="email" class="footer__icon" /> <a class="link" href="mailto:info@gastro-waldheim.de">info@gastro-waldheim.de</a></li>
+					</ul>
+			  </div>
+				<form class="form" action="mail.php" method="POST">
+					<div class="form__field">
+						<label for="name" class="form__label">Name</label> 
+						<input class="form__input" type="text" name="name">
+					</div>
+					<div class="form__field">
+						<label for="email" class="form__label">E-mail</label> 
+						<input class="form__input" type="text" name="email">
+					</div>
+					<div class="form__field">
+					 <label for="message" class="form__label">Message</label>
+					 <textarea class="form__textarea" name="message" rows="3"></textarea><br />
+					</div>
+					<div class="form__btn">
+						<input class="btn" type="submit" value="Send">
+					</div>
+				</form>
+
+				<div class="footer__rights">
+					<div class="copyright">
+						<span>Copyright &copy; 2018 Waldheim Leingarten</span> |
+						<a class="link" href="impressum.html">Impressum</a> |
+						<a class="link" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
+					</div>
+					
+					<div class="footer__arrow"><a class="link" href="#header">Back to top</a></div>
+
 				</div>
 			</div>
 		</footer>

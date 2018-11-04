@@ -1,6 +1,4 @@
 .carousel {
-	// important samo zato da pregazi 100% od owla
-	// also ovo ćemo još doradit ako treba kad on stavi tekst kad znamo koliko treba bit
 	width: 624px!important;
 	height: 100%;
 	background-color: $white;
@@ -22,8 +20,8 @@
 	.owl-dots {
 		position: absolute;
 		top: 100%;
-		left: calc(50% - 32px);
-		margin-top: 1rem;
+		left: 16rem;
+		margin-top: 0.75rem;
 	}
 
 	.owl-dot {
@@ -41,15 +39,39 @@
 		transition: .2s;
 	}
 
+	.owl-dot:hover span {
+		background: rgba($light-gray, 0.8)!important;
+	}
+
 	.owl-dot.active span {
 		background: $light-green!important;
 	}
 
 	.owl-dot.active span:hover {
-		background: rgba($light-gray, 1);
+		background: rgba($light-green, 0.8)!important;
 	}
 
-	.owl-dot.active span:focus, span:active, span:hover {
-		outline: none;
+	.owl-dot:focus, .owl-dot:active, .owl-dot:hover,
+	.owl-dot.active:focus, .owl-dot.active:active, .owl-dot.active:hover {
+		outline: none!important;
+		outline-color: transparent!important;
+	}
+
+	.owl-dot span:focus, .owl-dot span:active, .owl-dot span:hover,
+	.owl-dot.active span:focus, .owl-dot.active span:active, .owl-dot.active span:hover {
+		outline: none!important;
+		outline-color: transparent!important;
+	}
+
+	&--menu {
+		width: 100%!important;
+		box-shadow: none;
+		top: 0;
+		left: 0;
+
+		.carousel__item {
+			padding: 0;
+			box-shadow: 0 1px 3px 0px rgba($black, 0.25);
+		}
 	}
 }

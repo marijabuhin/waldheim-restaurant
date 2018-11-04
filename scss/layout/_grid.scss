@@ -24,7 +24,7 @@
  &__img--wrap {
     width: calc(50% + 8rem);
     height: 450px;
-    margin-left: -8rem;
+    margin-right: -8rem;
   }
 
   &__img {
@@ -34,13 +34,16 @@
     object-position: center;
   }
 
-
-
-&__item:nth-child(2) { 
-   .section__img--wrap { 
-    margin-left: 0;
-    margin-right: -8rem;
-    } 
+  &__item:nth-of-type(2) { 
+    margin-top: 4rem;
+  
+    .section__img--wrap { 
+      margin-left: -8rem;
     }
+
+    .section__text {
+      margin-left: 8rem;
+    }
+  }
 }
 
