@@ -21,25 +21,27 @@
 			</div>
 
 			<ul class="nav__item">
-				<li><a href="#news">News</a></li>
-				<li><a href="#restaurant">Restaurant</a></li>
-				<li><a href="#galerie">Galerie</a></li>
-				<li><a href="#speisekarte">Speisekarte</a></li>
-				<li><a href="#kontakt">Kontakt</a></li>
+				<li><a href="#news" class="nav__link">News</a></li>
+				<li><a href="#restaurant" class="nav__link">Restaurant</a></li>
+				<li><a href="#galerie" class="nav__link">Galerie</a></li>
+				<li><a href="#speisekarte" class="nav__link">Speisekarte</a></li>
+				<li><a href="#kontakt" class="nav__link">Kontakt</a></li>
 			</ul>
 		</nav>
 
 		<header id="header" class="header">
 			<div class="header__title">
-				<h1 class="header__title--bigger">Waldheim Leingarten</h1>
-				<h3 class="header__title--smaller">Café - Restaurant - Bistro</h3>
+				<h1>Waldheim Leingarten</h1>
+				<h3>Café - Restaurant - Bistro</h3>
 			</div>
 
 			<div class="header__img">
 				<img src="img/header_logo.png" alt="header_logo" />
 			</div>
 
-			<div class="header__txt">
+			<div class="header__dot"></div>
+
+			<div class="header__text">
 				<h4>Wir haben offen</h4>
 				<h6>von Mittwoch - Samstag ab 17:00<br/>
 				am Sonntagen &amp; Feiertagen ab 11:30<h6>
@@ -47,7 +49,7 @@
 		</header>
 
 		<section id="news" class="section news">
-			<h2>~ News ~</h2>
+			<h2 class="section__title">~ News ~</h2>
 
 			<div class="news__text">
 				<?php echo file_get_contents("news.txt"); ?>
@@ -55,7 +57,7 @@
 		</section>
 
 		<section id="restaurant" class="section">
-			<h2>~ Restaurant ~</h2>
+			<h2 class="section__title">~ Restaurant ~</h2>
 
 			<div class="section__item">
 				<div class="section__text">
@@ -105,7 +107,7 @@
 		</section>
 
 		<section id="galerie" class="gallery">
-			<h2>~ Galerie ~</h2>
+			<h2 class="section__title">~ Galerie ~</h2>
 
 			<div class="owl-carousel owl-theme carousel--gallery">
 		 		<div class="gallery__img--wrap"><img src="img/gallery.png" alt="gallery_pic" class="gallery__img" /></div>
@@ -114,7 +116,7 @@
 		</section>
 
 		<section id="speisekarte" class="section">
-			<h2>~ Unsere Speisekarte ~</h2>
+			<h2 class="section__title">~ Unsere Speisekarte ~</h2>
 
 			<div class="owl-carousel owl-theme carousel carousel--menu">
 			  <div class="carousel__item">
@@ -140,7 +142,7 @@
 		</section>
 
 		<footer id="kontakt" class="footer">
-			<h2>~ Kontakt/Anfahrt ~</h2>
+			<h2 class="section__title">~ Kontakt/Anfahrt ~</h2>
 
 			<div id="mapid" class="map"></div>
 
@@ -178,8 +180,7 @@
 						<a class="link" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
 					</div>
 					
-					<div class="footer__arrow"><a class="link" href="#header">Back to top</a></div>
-
+					<div class="footer__top"><a class="link" href="#header">Back to top</a></div>
 				</div>
 			</div>
 		</footer>
@@ -194,3 +195,5 @@
 	<script src="js/map.js"></script>
 	<script src="js/nav.js"></script>
 </body>
+
+</html>

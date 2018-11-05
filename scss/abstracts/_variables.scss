@@ -1,4 +1,3 @@
-
 // COLORS
 
 $light-green: #ABC148;
@@ -35,38 +34,38 @@ $breakpoints: (
 
 // HEADINGS
 
-$h1-sizes: (
-  small: (56px, 1.2),
-  medium: (64px, 1.2),
-  large: (64px, 1.2)
+$h1-font-sizes: (
+  small: (3.5rem, 1.2),
+  medium: (3.75rem, 1.2),
+  large: (4rem, 1.2)
 );
 
-$h2-sizes: (
-  small: (40px, 1.2),
-  medium: (48px, 1.2),
-  large: (48px, 1.2)
+$h2-font-sizes: (
+  small: (2.25rem, 1.2),
+  medium: (2.5rem, 1.2),
+  large: (3rem, 1.2)
 );
 
-$h3-sizes: (
-  small: (26px, 1.2),
-  medium: (32px, 1.2),
-  large: (32px, 1.2)
+$h3-font-sizes: (
+  small: (1.625rem, 1.2),
+  medium: (1.75rem, 1.2),
+  large: (2rem, 1.2)
 );
 
-$h4-sizes: (
-  small: (18px, 1.2),
-  medium: (20px, 1.2),
-  large: (20px, 1.2)
+$h4-font-sizes: (
+  small: (1.125rem, 1.2),
+  medium: (1.125rem, 1.2),
+  large: (1.25rem, 1.2)
 );
 
-$h5-sizes: (
-  small: (19px, 1.2),
-  medium: (19px, 1.2),
-  large: (19px, 1.2)
+$h5-font-sizes: (
+  small: (1rem, 1.2),
+  medium: (1rem, 1.2),
+  large: (1rem, 1.2)
 );
 
-$h6-sizes: (
-  small: (12px, 1.2),
-  medium: (12px, 1.2),
-  large: (12px, 1.2)
+$h6-font-sizes: (
+  small: (0.75rem, 1.2),
+  medium: (0.75rem, 1.2),
+  large: (0.75rem, 1.2)
 );

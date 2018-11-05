@@ -10,4 +10,13 @@
   text-decoration: none;
   cursor: pointer;
   padding: 6px 16px;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: $light-green;
+  }
+
+  &:hover, &:focus, &:acitve {
+    outline: none;
+  }
 }

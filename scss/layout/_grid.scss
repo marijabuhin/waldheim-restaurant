@@ -9,8 +9,19 @@
 
 .section {
   grid-column: 2/span 10;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  //padding-top: 2rem;
+  //padding-bottom: 2rem;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 1.25rem;
+    padding-top: 2.5rem;
+
+    @include breakpoint ($large) {
+      margin-bottom: 2rem;
+      padding-top: 4rem;
+    }
+  }
 
   &__item {
     display: flex;

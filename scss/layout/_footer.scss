@@ -12,18 +12,12 @@
 		padding-right: 8rem;
 	}
 
-&__info {
-	margin-top: 1.5rem;
-	width: 49%;
-}
- 
+	&__info {
+		margin-top: 1.5rem;
+		width: 49%;
+	}
 
-.icon {
-	width: 24px;
-	height: 24px;
-}
-
-&__text {
+	&__text {
 		list-style-type: none;
 		padding-left: 0;
 
@@ -40,7 +34,6 @@
 		}
 	}
 
-
 	&__icon {
 		width: 22px;
 		height: 22px;
@@ -49,7 +42,7 @@
 
 	&__rights {
 		width: 100%;
-		margin-top: 1.5rem;
+		margin-top: 2rem;
 		margin-bottom: 1.5rem;
 		border-top: 1px solid;
 		display: flex;
@@ -57,5 +50,17 @@
 		justify-content: space-between;
 	}
 
+	.copyright {
+		font-size: 0.75rem;
+		padding-top: 0.25rem;
+	}
+
+	&__top {
+
+		.link {
+			font-size: 0.75rem;
+			padding-top: 0.25rem;
+		}
+	}
 }
 
