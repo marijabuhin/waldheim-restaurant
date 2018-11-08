@@ -3,8 +3,12 @@
 
 	&__img--wrap {
 		width: 100%;
-   		height: 480px;
+		height: 320px;
    		cursor: grab;
+
+   		@include breakpoint ($large) {
+    		height: 480px;
+    	}
 	}
 
 	&__img {

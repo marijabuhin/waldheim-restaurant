@@ -1,28 +1,56 @@
 .testimonial {
   display: flex;
-  justify-content: space-between;
-  padding-top: 2rem;
-  padding-bottom: 2.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  width: calc(624px - 4rem);
-  height: calc(100% - 4.5rem);
+  flex-direction: column;
+  padding: 1rem;
+  width: calc(100% - 2rem);
+  height: auto;
   box-shadow: 5px 5px 20px 0px rgba(141, 141, 141, 0.25);
   background-color: $white;
   z-index: 1;
   position: relative;
-  top: 3rem;
-  right: 5.5rem;
+  top: -4.5rem;
+  right: 0;
+
+  @include breakpoint ($large) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(624px - 4rem);
+    height: calc(100% - 4.5rem);
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    top: 3rem;
+    right: 5.5rem;
+  }
 
   &__img {
-    width: 150px;
-    height: 150px;
+    width: 72px;
+    height: 72px;
     object-fit: cover;
     object-position: center;
+
+    @include breakpoint ($large) {
+      width: 150px;
+      height: 150px;
+    }
   }
 
   &__info {
-    text-align: center;
+    display: flex;
+
+    @include breakpoint ($large) {
+      display: block;
+      text-align: center;
+    }
+
+    div {
+      margin-left: 1.25rem;
+
+      @include breakpoint ($large) {
+        margin-left: 0;
+      }
+    }
 
     h4 {
       color: $dark-green;
@@ -39,6 +67,11 @@
   }
 
   &__text {
-    padding-left: 2rem;
+    margin-top: 1.25rem;
+
+    @include breakpoint ($large) {
+      margin-top: 0;
+      padding-left: 2rem;
+    }
   }
 }

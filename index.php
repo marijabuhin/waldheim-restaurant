@@ -15,7 +15,27 @@
 
 <body>
 	<div class="grid">
-		<nav class="nav">
+		<nav class="nav nav--mobile">
+			<div class="nav__logo">
+				<img src="img/logo-baum.png" alt="logo" />
+			</div>
+
+			<div class="burger"></div>
+
+			<div class="nav--burger">
+				<img src="img/logo-baum.png" alt="logo" />
+
+				<ul class="nav__item">
+					<li><a href="#news" class="nav__link">News</a></li>
+					<li><a href="#restaurant" class="nav__link">Restaurant</a></li>
+					<li><a href="#galerie" class="nav__link">Galerie</a></li>
+					<li><a href="#speisekarte" class="nav__link">Speisekarte</a></li>
+					<li><a href="#kontakt" class="nav__link">Kontakt</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<nav class="nav nav--desktop">
 			<div class="nav__logo">
 				<img src="img/logo-baum.png" alt="logo" />
 			</div>
@@ -93,8 +113,10 @@
 					<div class="testimonial">
 						<div class="testimonial__info">
 							<img src="img/Portrait-1.png" alt="portrait" class="testimonial__img" />
-							<h4>Full name</h4>
-							<h6>Job title</h6>
+							<div>
+								<h4>Full name</h4>
+								<h6>Job title</h6>
+							</div>
 						</div>
 						
 						<div class="testimonial__text">
@@ -175,8 +197,8 @@
 
 				<div class="footer__rights">
 					<div class="copyright">
-						<span>Copyright &copy; 2018 Waldheim Leingarten</span> |
-						<a class="link" href="impressum.html">Impressum</a> |
+						<span>Copyright &copy; 2018 Waldheim Leingarten</span>
+						<a class="link" href="impressum.html">Impressum</a>
 						<a class="link" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
 					</div>
 					
@@ -193,6 +215,7 @@
 	<script src="js/owl_carousel.js"></script>
 	<script src="js/carousel.js"></script>
 	<script src="js/map.js"></script>
+	<script src="js/burger.js"></script>
 	<script src="js/nav.js"></script>
 </body>
 

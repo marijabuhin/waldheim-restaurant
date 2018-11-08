@@ -1,7 +1,7 @@
 .header {
 	grid-column: 1/span 12;
 	@include background('../img/header.png');
-  	background-size: 100% 100%;
+  	background-size: cover;
 	height: 100vh;
 	position: relative;
 	color: $white;
@@ -13,6 +13,11 @@
   		line-height: 89px;
   		text-align: center;
   		text-shadow: 2px 2px $black;
+  		margin-top: -16%;
+
+  		@include breakpoint ($large) {
+  		margin-top: 1%;
+  		}
 
   		h1 {
   			margin-bottom: 1rem;
@@ -26,13 +31,14 @@
 		border-radius: 5px;
 		position: relative;
 		left: calc(50% - 129px);
-		top: 25%;
+		top: 18%;
 		box-shadow: 2px 4px 10px 0 rgba($black, 0.25);
 		text-align: center;
 		transform: rotate(5deg);
 	
 		@include breakpoint ($large) {
 			line-height: 25px;
+			top: 25%;
 		}
 
 		h4 {
@@ -66,8 +72,12 @@
 		border-radius: 100%;
 		box-shadow: 1px 1px 4px 0 rgba($black, 0.5);
 		position: relative;
-		top: 18%;
+		top: 12%;
 		left: calc(50% - 2.5px);
+
+		@include breakpoint ($large) {
+			top: 18%;
+		}
 
 		&:before, &:after {
 			content: "";
@@ -92,14 +102,15 @@
 	}
 
 	&__img { 	
+		top: -15%;
+		position: absolute;
+		left: calc(50% - 300px);
+
 		@include breakpoint ($large) {
 			display: block;
+			top: calc(45% - 262px);
 		}
-
-		position: absolute;
-		top: calc(45% - 262px);
-		left: calc(50% - 300px);
-		}
+	}
 
 	&__img img {
 		border-radius: 3px;

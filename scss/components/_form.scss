@@ -1,9 +1,15 @@
 .form {
-	width: 49%;	
+	width: 100%;	
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-top: 4rem;
+	margin-top: 2rem;
+
+	@include breakpoint ($large) {
+		width: 49%;
+		margin-top: 4rem;
+		}
+
 
 	&__label {
 		display: block;
@@ -13,9 +19,13 @@
 		line-height: 0.875rem;
 	}
 
-	&__field {
-		width: 49%;
+	&__field {	
+		width: 100%;
 		margin-bottom: 1rem;
+
+	@include breakpoint ($large) {
+		width: 49%;
+		}
 
 		&:nth-child(3) {
 			width: 100%;

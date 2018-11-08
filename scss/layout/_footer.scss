@@ -5,16 +5,26 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		width: calc(100% - 16rem);
+		width: calc(100% - 2rem);
 		color: $white;
 		background-color: $dark-green;
-		padding-left: 8rem;
-		padding-right: 8rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		
+		@include breakpoint ($large) {
+			width: calc(100% - 16rem);
+			padding-left: 8rem;
+			padding-right: 8rem;
+		}
 	}
 
 	&__info {
 		margin-top: 1.5rem;
-		width: 49%;
+		width:100%;
+
+		@include breakpoint ($large) {
+			width: 49%;
+		}
 	}
 
 	&__text {
