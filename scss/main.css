@@ -559,10 +559,12 @@ p {
     justify-content: space-between; }
   .footer .copyright {
     font-size: 0.75rem;
-    padding-top: 0.25rem; }
+    padding-top: 0.25rem;
+    width: 50%; }
   .footer__top .link {
     font-size: 0.75rem;
-    padding-top: 0.25rem; }
+    padding-top: 0.25rem;
+    width: 50%; }
 
 .nav {
   grid-column: 1/span 12;
@@ -585,6 +587,8 @@ p {
   .nav__item li {
     list-style: none;
     display: inline; }
+  .nav--dark {
+    background-color: #212121; }
 
 .nav--desktop {
   display: none;
