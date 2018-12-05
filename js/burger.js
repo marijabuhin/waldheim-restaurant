@@ -2,7 +2,7 @@
 $(function () {
 
   $('.burger').on('click', function(){
-    $('.burger').addClass('burger--active');
+    $('.burger').toggleClass('burger--active');
   	$(".nav--burger").animate({height: 'toggle'});
   });
 

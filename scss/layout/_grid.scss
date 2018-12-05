@@ -26,9 +26,29 @@
     }
   }
 
+  &__title--large {
+    padding-top: 6rem;
+  }
+
   &__item {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  &__item:first-of-type {
+
+    @include breakpoint ($large) {
+      
+      .section__text {
+        display: inline-flex;
+      }
+
+      .carousel--about {
+        right: -5.5rem!important;
+        left: auto!important;
+        margin-left: auto;
+      }
+    }
   }
 
   &__item:nth-of-type(2) {
@@ -96,4 +116,27 @@
       object-position: center;
     }
   }
+}
+
+.section--page {
+
+  @include breakpoint ($large) {
+    grid-column: 3/span 8;
+  }
+
+  .page__text {
+
+    p:first-child {
+      margin-top: 0;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.section.speisekarte {
+  padding-bottom: 2rem;
+  overflow: hidden;
 }

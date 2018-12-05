@@ -6,10 +6,20 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Waldheim Leingarten &mdash; Caf&eacute; Bistro Restaurant</title>
+	<title>Waldheim Leingarten &mdash; Caf&eacute; Restaurant Bistro</title>
+	<meta name="og:locale" content="de_DE" />
+	<meta name="og:type" content="website" />
+	<meta name="og:title" content="Waldheim Leingarten" />
+	<meta name="og:description" content="Cafe Restaurant Bistro" />
+	<!-- add url <meta name="og:url" content="" />-->
+	<meta name="og:site_name" content="Waldheim Leingarten" />
+	<meta name="og:image" content="img/logo-baum.png" />
+	<meta name="article:tag" content="Waldheim Leingarten, Cafe, Restaurant, Bistro, Germany" />
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="img/logo-baum.png"/>
+	<link rel="stylesheet" href="scss/vendors/owl_carousel.css">
+	<link rel="stylesheet" href="scss/vendors/owl_theme.css">
 	<link rel="stylesheet" href="scss/main.css">
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
 </head>
@@ -18,7 +28,7 @@
 	<div class="grid">
 		<nav class="nav nav--mobile">
 			<div class="nav__logo">
-				<img src="img/logo-baum.png" alt="logo" />
+				<a href="index.php"><img src="img/logo-baum.png" alt="logo" /></a>
 			</div>
 
 			<div class="burger"></div>
@@ -38,7 +48,7 @@
 
 		<nav class="nav nav--desktop">
 			<div class="nav__logo">
-				<img src="img/logo-baum.png" alt="logo" />
+				<a href="index.php"><img src="img/logo-baum.png" alt="logo" /></a>
 			</div>
 
 			<ul class="nav__item">
@@ -51,22 +61,29 @@
 		</nav>
 
 		<header id="header" class="header">
-			<div class="header__title">
+			<div class="header__content">
+				<div class="header__title">
 				<h1>Waldheim Leingarten</h1>
 				<h3>Café - Restaurant - Bistro</h3>
 			</div>
 
-			<div class="header__img">
-				<img src="img/header_logo.png" alt="header_logo" />
-			</div>
+				<div class="header__img">
+					<img src="img/header_logo.png" alt="header_logo" />
+				</div>
 
-			<div class="header__dot"></div>
+				<div class="header__sign">
+					<div class="header__dot"></div>
 
-			<div class="header__text">
-				<h4>Wir haben offen</h4>
-				<h6>von Mittwoch - Samstag ab 17:00<br/>
-				am Sonntagen &amp; Feiertagen ab 11:30<h6>
-			</div>
+					<div class="header__line header__line--left"></div>
+					<div class="header__line header__line--right"></div>
+
+					<div class="header__text">
+						<h4>Wir haben offen</h4>
+						<h6>von Mittwoch - Samstag ab 17:00<br/>
+						am Sonntagen &amp; Feiertagen ab 11:30</h6>
+					</div>
+				</div>
+			</div>			
 		</header>
 
 		<section id="news" class="section news">
@@ -113,7 +130,7 @@
 				<div class="section__text">
 					<div class="testimonial">
 						<div class="testimonial__info">
-							<img src="img/Portrait-1.png" alt="portrait" class="testimonial__img" />
+							<img src="img/portrait-1.png" alt="portrait" class="testimonial__img" />
 							<div>
 								<h4>Full name</h4>
 								<h6>Job title</h6>
@@ -135,37 +152,42 @@
 			<div class="owl-carousel owl-theme carousel--gallery">
 		 		<div class="gallery__img--wrap"><img src="img/gallery.png" alt="gallery_pic" class="gallery__img" /></div>
 		 		<div class="gallery__img--wrap"><img src="img/header.png" alt="gallery_pic" class="gallery__img" /></div>
-		 	</div>
+		 	</div> 	
 		</section>
 
-		<section id="speisekarte" class="section">
+		<section id="speisekarte" class="section section speisekarte">
 			<h2 class="section__title">~ Unsere Speisekarte ~</h2>
 
-			<div class="owl-carousel owl-theme carousel carousel--menu">
-			  <div class="carousel__item">
-			  	<img src="img/speisekarte_1.png" alt="speisekarte" class="carousel__img" />
-			  </div>
+			<div class="carousel carousel--menu owl-carousel">
+				<div class="carousel__item">
+					<h6>Warme Getränke</h6>
+					<img src="img/speisekarte_1.png" alt="speisekarte" class="carousel__img" />
+				</div>
 
-			  <div class="carousel__item">
-			  	<img src="img/speisekarte_2.png" alt="speisekarte" class="carousel__img" />
-			  </div>
+				<div class="carousel__item">
+					<h6>Alkoholfreie Getränke</h6>
+					<img src="img/speisekarte_2.png" alt="speisekarte" class="carousel__img" />
+				</div>
 
-			  <div class="carousel__item">
-			  	<img src="img/speisekarte_3.png" alt="speisekarte" class="carousel__img" />
-			  </div>
-
-			  <div class="carousel__item">
-			  	<img src="img/speisekarte_4.png" alt="speisekarte" class="carousel__img" />
-			  </div>
-			  
-			  <div class="carousel__item">
-			  	<img src="img/speisekarte_5.png" alt="speisekarte" class="carousel__img" />
-			  </div>
+				<div class="carousel__item">
+					<h6>Säfte</h6>
+					<img src="img/speisekarte_3.png" alt="speisekarte" class="carousel__img" />
+				</div>
+				
+				<div class="carousel__item">
+					<h6>Biere</h6>
+					<img src="img/speisekarte_4.png" alt="speisekarte" class="carousel__img" />
+				</div>
+				
+				<div class="carousel__item">
+					<h6>Weine</h6>
+					<img src="img/speisekarte_5.png" alt="speisekarte" class="carousel__img" />
+				</div>
 			</div>
 		</section>
 
 		<footer id="kontakt" class="footer">
-			<h2 class="section__title">~ Kontakt/Anfahrt ~</h2>
+			<h2 class="section__title">~ Kontakt ~</h2>
 
 			<div id="mapid" class="map"></div>
 
@@ -211,13 +233,20 @@
 
 	<script src="js/jquery-3.3.1.js"></script>
 	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
-	   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
-	   crossorigin=""></script>
+	  integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+	  crossorigin=""></script>
 	<script src="js/owl_carousel.js"></script>
 	<script src="js/carousel.js"></script>
 	<script src="js/map.js"></script>
 	<script src="js/burger.js"></script>
 	<script src="js/nav.js"></script>
+	<script>
+		$(document).ready(function() {
+	    $('.carousel--menu').find('.owl-item.active.center').addClass('big');
+	    $('.carousel--menu').find('.owl-item.active.center').prev('.owl-item').addClass('medium medium--left');
+	    $('.carousel--menu').find('.owl-item.active.center').next('.owl-item').addClass('medium medium--right');
+		});
+	</script>
 </body>
 
 </html>

@@ -1,27 +1,91 @@
 .header {
 	grid-column: 1/span 12;
-	@include background('../img/header.png');
-  	background-size: cover;
+	@include background('../img/header-new.png');
+  background-size: cover;
 	height: 100vh;
 	position: relative;
 	color: $white;
 
+	@include breakpoint ($large) {
+  	padding-top: 7rem;
+  }
+
 	&__title {
-  		padding-top: 10rem;
-  		position: relative;
-  		z-index: 2;
-  		line-height: 89px;
-  		text-align: center;
-  		text-shadow: 2px 2px $black;
-  		margin-top: -16%;
+  	top: 4rem;
+  	position: relative;
+  	z-index: 2;
+  	line-height: 89px;
+  	text-align: center;
+  	text-shadow: 2px 2px $black;
+
+  	@include breakpoint ($large) {
+  		top: 3rem;
+  	}
+
+  	h1 {
+  		line-height: 1.1;
+  		margin-bottom: 1rem;
 
   		@include breakpoint ($large) {
-  		margin-top: 1%;
+  			line-height: 1.2;
   		}
+  	}
+	}
 
-  		h1 {
-  			margin-bottom: 1rem;
-  		}
+	&__content {
+		display: block;
+		width: 100%;
+		height: 550px;
+		position: relative;
+		top: 0;
+		margin: 0 auto;
+
+		@include breakpoint ($large) {
+			top: calc(50% - 366px);
+		}
+	}
+
+	&__img { 	
+		position: absolute;
+		top: 0;
+		left: calc(50% - 300px);
+	}
+
+	&__sign {
+		position: absolute;
+		bottom: 10%;
+    left: calc(50% - 129px);
+
+		.header__dot {
+			width: 5px;
+			height: 5px;
+			background-color: $gray;
+			border-radius: 100%;
+			box-shadow: 1px 1px 4px 0 rgba($black, 0.5);
+			position: absolute;
+			top: 0;
+			left: calc(50% - 2.5px);
+			z-index: 2;
+		}
+
+		.header__line {
+			width: 130px;
+			height: 1px;
+			background-color: $light-gray;
+			position: absolute;
+
+			&--left {
+				transform: rotate(-20deg);
+				top: 1.5rem;
+				right: calc(50% - 5px);
+			}
+
+			&--right {
+				transform: rotate(27deg);
+	    	top: 32px;
+	    	left: calc(50% - 7px);
+			}
+		}
 	}
 
 	&__text {
@@ -31,18 +95,21 @@
 		border-radius: 5px;
 		position: relative;
 		left: calc(50% - 129px);
-		top: 18%;
+		top: 6vh;
 		box-shadow: 2px 4px 10px 0 rgba($black, 0.25);
 		text-align: center;
 		transform: rotate(5deg);
 	
 		@include breakpoint ($large) {
 			line-height: 25px;
-			top: 25%;
+		}
+
+		@include breakpoint ($xlarge) {
+			top: 5vh;
 		}
 
 		h4 {
-		    padding-top: 1.75rem;
+		  padding-top: 1.75rem;
 		}
 
 		h6 {
@@ -52,68 +119,16 @@
 
 		&:after {
 			content: "";
-	    	display: block;
-	    	background: transparent;
-	    	width: 238px;
-	    	height: 116px;
-	    	border-radius: 5px;
-	    	border: 3px solid #fff;
-	    	position: absolute;
-	    	top: 7px;
-	    	left: 7px;
-	    	z-index: 2;
+	    display: block;
+	    background: transparent;
+	    width: 238px;
+	    height: 116px;
+	    border-radius: 5px;
+	    border: 3px solid #fff;
+	    position: absolute;
+	    top: 7px;
+	    left: 7px;
+	    z-index: 2;
 		}
-	}
-
-	&__dot {
-		width: 5px;
-		height: 5px;
-		background-color: $gray;
-		border-radius: 100%;
-		box-shadow: 1px 1px 4px 0 rgba($black, 0.5);
-		position: relative;
-		top: 12%;
-		left: calc(50% - 2.5px);
-
-		@include breakpoint ($large) {
-			top: 18%;
-		}
-
-		&:before, &:after {
-			content: "";
-			display: block;
-			width: 130px;
-			height: 1px;
-			background-color: $light-gray;
-			position: absolute;
-		}
-
-		&:before {
-			transform: rotate(-20deg);
-			top: 1.5rem;
-			right: calc(50% - 5px);
-		}
-
-		&:after {
-			transform: rotate(27deg);
-    		top: 32px;
-    		left: calc(50% - 7px);
-		}
-	}
-
-	&__img { 	
-		top: -15%;
-		position: absolute;
-		left: calc(50% - 300px);
-
-		@include breakpoint ($large) {
-			display: block;
-			top: calc(45% - 262px);
-		}
-	}
-
-	&__img img {
-		border-radius: 3px;
 	}
 }
-

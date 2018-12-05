@@ -5,7 +5,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Waldheim Leingarten &mdash; Caf&eacute; Bistro Restaurant</title>
+	<title>Waldheim Leingarten &mdash; Caf&eacute; Restaurant Bistro</title>
+	<meta name="og:locale" content="de_DE" />
+	<meta name="og:type" content="website" />
+	<meta name="og:title" content="Waldheim Leingarten" />
+	<meta name="og:description" content="Cafe Restaurant Bistro" />
+	<!-- add url <meta name="og:url" content="" />-->
+	<meta name="og:site_name" content="Waldheim Leingarten" />
+	<meta name="og:image" content="img/logo-baum.png" />
+	<meta name="article:tag" content="Waldheim Leingarten, Cafe, Restaurant, Bistro, Germany" />
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="img/logo-baum.png"/>
@@ -17,34 +25,40 @@
 	<div class="grid">
 		<nav class="nav nav--mobile nav--dark">
 			<div class="nav__logo">
-				<img src="img/logo-baum.png" alt="logo" />
+				<a href="index.php"><img src="img/logo-baum.png" alt="logo" /></a>
 			</div>
 
 			<ul class="nav__item">
 				<li><a href="index.php" class="nav__link">Home</a></li>
+				<li><a href="#kontakt" class="nav__link">Kontakt</a></li>
 			</ul>
 		</nav>
 
 		<nav class="nav nav--desktop nav--dark">
 			<div class="nav__logo">
-				<img src="img/logo-baum.png" alt="logo" />
+				<a href="index.php"><img src="img/logo-baum.png" alt="logo" /></a>
 			</div>
 
 			<ul class="nav__item">
 				<li><a href="index.php" class="nav__link">Home</a></li>
+				<li><a href="#kontakt" class="nav__link">Kontakt</a></li>
 			</ul>
 		</nav>
 
-		<section id="news" class="section news">
-			<h2 class="section__title">~ Datenschutzerklaerung ~</h2>
+		<section id="page" class="section section--page">
+			<h2 class="section__title section__title--large">~ Datenschutzerklaerung ~</h2>
 
-			<div class="news__text">
-				to do
+			<div class="page__text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus semper, neque et faucibus varius, nisl elit lobortis nibh, in tempor justo mi id metus. Integer arcu tortor, accumsan facilisis ex a, facilisis mattis lectus. Fusce iaculis augue felis. Aliquam tempor ut justo a aliquet. Vestibulum ac purus a ipsum eleifend tempus. Phasellus mollis sit amet libero at elementum. Aliquam tincidunt diam nec cursus ornare. Integer viverra, enim sed lacinia ornare, libero ipsum convallis risus, vel facilisis tortor turpis ut sem. Ut tellus eros, auctor nec diam ut, pulvinar vestibulum lacus. Pellentesque cursus augue eget fermentum consequat.</p>
+				<p>Aliquam volutpat tincidunt arcu at convallis. Ut facilisis ex non luctus feugiat. Etiam convallis tellus odio, nec ullamcorper sapien pharetra ac. Maecenas lacinia, orci vel venenatis porttitor, neque neque consectetur urna, in aliquet magna dui a libero. Sed tristique suscipit tortor ac euismod. Morbi commodo euismod est. Donec a aliquam nulla. Nunc blandit mollis enim sodales facilisis.</p>
+				<p>Vivamus mattis vitae lectus vitae scelerisque. Etiam vitae tellus id leo tincidunt scelerisque. Duis id efficitur enim, nec vehicula enim. Ut quis lacus in dolor rutrum rhoncus. Fusce vehicula efficitur tincidunt. In at lectus massa. Sed feugiat augue sit amet purus blandit porta. Nunc semper tristique mollis. Proin nec orci interdum, vestibulum massa et, semper orci. Fusce venenatis, libero ac blandit luctus, nulla ipsum luctus orci, eget euismod urna purus non risus. Pellentesque euismod laoreet elit, non fermentum lorem consequat ut. Donec ornare et ligula quis eleifend.</p>
+				<p>Morbi a erat dictum, aliquam justo a, commodo justo. Vestibulum imperdiet vulputate mi. Aliquam vitae urna porta, ultricies massa sit amet, eleifend ante. Cras dignissim pretium lorem, a commodo dui rhoncus ac. Vivamus ornare purus dui, non euismod enim rutrum eu. Nunc ut interdum tortor, vel pretium urna. Suspendisse volutpat sollicitudin lectus, ut posuere est posuere vitae. Morbi convallis auctor est in aliquet. Nullam quis libero ante. Ut cursus sem erat, id varius justo sodales ut.</p>
+				<p>Donec quis libero ac mauris lacinia dignissim. Vivamus a aliquam massa. Etiam viverra diam sed interdum condimentum. Fusce consequat laoreet augue at tempor. In vitae dui in massa tempus rutrum at vehicula purus. Phasellus laoreet ipsum ut efficitur faucibus. Praesent ut sapien commodo, bibendum lectus vel, cursus nisl. Vivamus quis bibendum dui.</p>
 			</div>
 		</section>
 
 		<footer id="kontakt" class="footer">
-			<h2 class="section__title">~ Kontakt/Anfahrt ~</h2>
+			<h2 class="section__title">~ Kontakt ~</h2>
 
 			<div id="mapid" class="map"></div>
 
@@ -82,7 +96,7 @@
 						<a class="link" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
 					</div>
 					
-					<div class="footer__top"><a class="link" href="#news">Back to top</a></div>
+					<div class="footer__top"><a class="link" href="#page">Back to top</a></div>
 				</div>
 			</div>
 		</footer>

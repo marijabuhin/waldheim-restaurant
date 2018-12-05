@@ -7,12 +7,11 @@
 	left: 0;
 
 	@include breakpoint ($large) {
-		width: 624px!important;
+		width:  36rem !important;
 		height: 100%;
 		box-shadow: -5px 5px 20px 0px rgba(141, 141, 141, 0.25);
-    	top: 3rem;
-		left: 8rem;
-    }
+    top: 3rem;
+  }
 
 	&__item {
 		padding: 1rem;
@@ -22,7 +21,7 @@
 			padding-bottom: 2.5rem;
 			padding-left: 2rem;
 			padding-right: 2rem;
-	    }
+	  }
 	}
 
 	.owl-nav {
@@ -34,10 +33,6 @@
 		top: 100%;
 		left: calc(50% - 60px);
 		margin-top: 0.75rem;
-
-		@include breakpoint ($large) {
-			left: 16rem;
-	    }
 	}
 
 	.owl-dot {
@@ -78,21 +73,185 @@
 		outline: none!important;
 		outline-color: transparent!important;
 	}
-
-	&--menu {
-		width: 100%!important;
-		box-shadow: none;
-		top: 0;
-		left: 0;
-
-		.carousel__item {
-			padding: 0;
-			box-shadow: 0 1px 3px 0px rgba($black, 0.25);
-		}
-	}
 }
 
 .owl-theme .owl-dots .owl-dot {
 	padding-top: 0.5rem!important;
 	padding-bottom: 0.5rem!important;
+}
+
+.carousel--menu {
+	width: calc(100% - 4rem)!important;
+	box-shadow: none;
+	top: 0;
+	left: 0;
+  margin: 0 auto;
+
+  @include breakpoint ($large) {
+  	width: calc(100% - 15rem)!important;
+  }
+
+  .owl-stage-outer {
+  	height: 30rem;
+
+  	@include breakpoint ($large) {
+    	height: 33rem;
+	  }
+  }
+
+  .carousel__item {
+		padding: 0;
+
+		h6 {
+			text-transform: uppercase;
+		}
+
+		.carousel__img {
+
+			@include breakpoint ($large) {
+	    	box-shadow: 1px 2px 3px 0px rgba($black, 0.25);
+		  }
+		}
+	}
+
+  .owl-nav, .owl-nav.disabled, .owl-dots.disabled {
+  	display: block!important;
+  }
+
+  .owl-prev {
+  	color: rgba($light-gray, 0.5)!important;
+  	font-size: 3rem!important;
+  	position: absolute;
+    top: calc(50% - 3rem);
+    left: -2.5rem;
+    transition: 0.2s;
+
+    @include breakpoint ($large) {
+    	font-size: 4rem!important;
+    	top: calc(50% - 2.25rem);
+	  	left: -6rem;
+	  }
+
+    &:hover {
+    	color: rgba($light-gray, 0.8)!important;	
+    }
+
+    &:focus {
+    	outline: none;
+    }
+
+    span {
+    	padding-left: 0.75rem;
+    	padding-right: 0.75rem;
+    }
+  }
+
+  .owl-next {
+  	color: rgba($light-gray, 0.5)!important;
+  	font-size: 3rem!important;
+  	position: absolute;
+    top: calc(50% - 3rem);
+    right: -2.5rem;
+    transition: 0.2s;
+
+    @include breakpoint ($large) {
+    	font-size: 4rem!important;
+    	top: calc(50% - 2.25rem);
+	  	right: -6rem;
+	  }
+
+    &:hover {
+    	color: rgba($light-gray, 0.8)!important;	
+    }
+
+    &:focus {
+    	outline: none;
+    }
+
+    span {
+    	padding-left: 0.75rem;
+    	padding-right: 0.75rem;
+    }
+  }
+
+  .owl-dots {
+  	left: calc(50% - 100px);
+  	margin-top: 0;
+  }
+
+  .owl-dot.active span {
+  	background: $light-green!important;
+
+  	&:hover {
+  		background: rgba($light-green, 0.8)!important;
+  	}
+  }
+
+  button.owl-dot {
+  	padding-top: 0.5rem!important;
+  	padding-bottom: 0.5rem!important;
+  }
+
+  .owl-dot span {
+  	display: block;
+  	background: rgba($light-gray, 0.5)!important;
+  	
+  	&:hover {
+  		background: rgba($light-gray, 0.8)!important;
+  	}
+  }
+
+  .owl-item {
+  	position: relative;
+  	z-index: 1;
+
+  	@include breakpoint ($large) {
+
+	  	.carousel__item {
+	  		width: 15.875rem;
+	  		height: 22.5rem;
+	  		position: absolute;
+	  		top: 4rem;
+	  	}
+  	}
+  }
+
+	.owl-item.medium {
+		height: 300px;
+	  z-index: 2;
+
+	  @include breakpoint ($large) {
+		  
+		  .carousel__item {
+				width: 18.5rem;
+				height: 26.25rem;
+				position: absolute;
+				top: 2rem;
+			}
+		}
+	}
+
+	.owl-item.medium--left .carousel__item {
+		left: -2rem;
+	}
+
+	.owl-item.medium--right .carousel__item {
+		right: -2rem;
+	}
+
+	.owl-item.big {
+		height: 400px;
+		z-index: 3;
+
+		@include breakpoint ($large) {
+	  	
+	  	.carousel__item {
+				width: 21.25rem;
+				height: 30rem;
+				position: relative;
+				top: 0;
+				left: calc(50% - 10.625rem);
+			}
+	  }
+	}
 }
