@@ -1,0 +1,4 @@
+<h2 <p>~ News ~</p></h2>
+<p>unsere neue Internetseite ist Online</p>
+<p>das Waldheimteam wünschen Ihnen eine schöne Adventszeit</p>
+<hr>

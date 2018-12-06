@@ -11,7 +11,7 @@
 	<meta name="og:type" content="website" />
 	<meta name="og:title" content="Waldheim Leingarten" />
 	<meta name="og:description" content="Cafe Restaurant Bistro" />
-	<meta name="og:url" content="http://www.gastro-waldheim.de" />
+	<!-- add url <meta name="og:url" content="" />-->
 	<meta name="og:site_name" content="Waldheim Leingarten" />
 	<meta name="og:image" content="img/logo-baum.png" />
 	<meta name="article:tag" content="Waldheim Leingarten, Cafe, Restaurant, Bistro, Germany" />
@@ -41,7 +41,6 @@
 					<li><a href="#restaurant" class="nav__link">Restaurant</a></li>
 					<li><a href="#galerie" class="nav__link">Galerie</a></li>
 					<li><a href="#speisekarte" class="nav__link">Speisekarte</a></li>
-                    <li><a href="#getraenkekarte" class="nav__link">Getr&auml;nkekarte</a></li>
 					<li><a href="#kontakt" class="nav__link">Kontakt</a></li>
 				</ul>
 			</div>
@@ -57,7 +56,6 @@
 				<li><a href="#restaurant" class="nav__link">Restaurant</a></li>
 				<li><a href="#galerie" class="nav__link">Galerie</a></li>
 				<li><a href="#speisekarte" class="nav__link">Speisekarte</a></li>
-                <li><a href="#getraenkekarte" class="nav__link">Getr&auml;nkekarte</a></li>
 				<li><a href="#kontakt" class="nav__link">Kontakt</a></li>
 			</ul>
 		</nav>
@@ -80,67 +78,52 @@
 					<div class="header__line header__line--right"></div>
 
 					<div class="header__text">
-						<h4>Öffnungszeiten</h4>
+						<h4>Wir haben offen</h4>
 						<h6>von Mittwoch - Samstag ab 17:00<br/>
-						an Sonntagen &amp; Feiertagen ab 11:30</h6>
+						am Sonntagen &amp; Feiertagen ab 11:30</h6>
 					</div>
 				</div>
 			</div>			
 		</header>
 
 		<section id="news" class="section news">
-			<!--<h2 class="section__title"></h2>-->
+			<h2 class="section__title">~ News ~</h2>
 
 			<div class="news__text">
 				<?php echo file_get_contents("news.txt"); ?>
 			</div>
 		</section>
 
-		<section id="restaurant" class="section restaurant">
+		<section id="restaurant" class="section">
 			<h2 class="section__title">~ Restaurant ~</h2>
 
 			<div class="section__item">
 				<div class="section__text">
 					<div class="owl-carousel owl-theme carousel carousel--about">
 					  <div class="carousel__item">
-					  	<h3>Das Restaurant</h3>
-					  	<h4><p><br>Im schönen Ambiente haben wir Platz für 25 Gäste.
-                            <br>
-                            <br>Bei Veranstaltungen kann ein Buffet angeboten werden.<br>Auf Wunsch findet sich hier auch Raum für einen DJ / Alleinunterhalter.
-                            <br>
-                            <br>Eine Wickelstation ist vorhanden.
-
-                            <br>Hauseigene Parkplätze finden Sie direkt vor dem Gebäude.
-
-                            <br>Hunde sind bei uns willkommen.
-                        </p></h4>
+					  	<h3>Der Gastraum</h3>
+					  	<p>Thanks for stopping by. We are the last authentic Italian restaurant in Milan, serving delicious Italian cuisine cooked by the best chefs. It only takes a few minutes to browse through our website and check out our menu. We hope you'll soon join us for a superb Italian culinary experience.</p>
 					  </div>
 
 					  <div class="carousel__item">
 					  	<h3>Das Nebenzimmer</h3>
-					  	<h4><p>
-                            <br>Hier finden 25-30 Personen Platz.
-                            <br>
-                            <br>Familienfeiern, Vereinsveranstaltungen und Versammlungen können im Nebenraum ungestört stattfinden.
-                            <br>
-                            <br>Das angrenzende Billardzimmer lädt zum Spielen ein.
-                        </p></h4>
+					  	<p>Thanks for stopping by. We are the last authentic Italian restaurant in Milan, serving delicious Italian cuisine cooked by the best chefs. It only takes a few minutes to browse through our website and check out our menu. We hope you'll soon join us for a superb Italian culinary experience.</p>
 					  </div>
 
 					  <div class="carousel__item">
 					  	<h3>Der Biergarten</h3>
-					  	<h4><p><br>
-                            <br>In unserem gemütlichen Biergarten können Sie bei schönem Wetter die Natur genießen.
-                            <br>
-                            <br>Das freundliche Personal nimmt gerne Ihre Bestellung entgegen.
-                        </p></h4>
+					  	<p>Thanks for stopping by. We are the last authentic Italian restaurant in Milan, serving delicious Italian cuisine cooked by the best chefs. It only takes a few minutes to browse through our website and check out our menu. We hope you'll soon join us for a superb Italian culinary experience.</p>
 					  </div>
                         
+                      <div class="carousel__item">
+					  	<h3>Das Billardzimmer</h3>
+					  	<p>Thanks for stopping by. We are the last authentic Italian restaurant in Milan, serving delicious Italian cuisine cooked by the best chefs. It only takes a few minutes to browse through our website and check out our menu. We hope you'll soon join us for a superb Italian culinary experience.</p>
+					  </div>
 					</div>
 				</div>
 
 				<div class="section__img--wrap">
-					<img src="img/gallerie/wh2.jpg" alt="restaurant-image" class="section__img" />
+					<img src="img/location.jpg" alt="restaurant-image" class="section__img" />
 				</div>
 			</div>
 			
@@ -160,15 +143,8 @@
 						</div>
 						
 						<div class="testimonial__text">
-							<h3>über mich...</h3>
-							<h4><p>Im Jahr 2010 habe ich das Waldheim wieder eröffnet.
-                                <br>
-                                Gerne nehme ich die Herausforderung an und biete Ihnen einen schönen Rahmen für ein gemütliches Essen, einen Geburtstag oder Ähnliches.
-                                <br>
-                                Dabei werde ich täglich von meinem tollen Team unterstützt.
-                                <br>
-                                Ich freue mich, Sie als meine Gäste begrüßen zu dürfen.
-                            </p></h4>
+							<h3>Was treibt mich an...</h3>
+							<p>nach langer überlegung dachte ich mir ich möchte es wagen mich selbstständig zu machen. so habe ich mich entschlossen diesen schritt zu gehen und habe nach einer Grundsanierung im xxxxxx 2007 das Waldheim wieder eröffnet. Auch wenn der Anfang nicht einfach war, bin ich heute froh das getan zu haben. Es macht mir viel Freude meine Gäste mit gut bürgerlichen Speisen zu verwöhnen</p>
 						</div>
 					</div>
 				</div>
@@ -179,112 +155,41 @@
 			<h2 class="section__title">~ Galerie ~</h2>
 
 			<div class="owl-carousel owl-theme carousel--gallery">
-				<div class="gallery__img--wrap"><img src="img/gallerie/neb1.jpg" alt="gallery_pic3" class="gallery__img" /></div>
-                <div class="gallery__img--wrap"><img src="img/gallerie/neb3.jpg" alt="gallery_pic4" class="gallery__img" /></div>
-		 		<div class="gallery__img--wrap"><img src="img/gallerie/wh1.jpg" alt="gallery_pic1" class="gallery__img" /></div>
-		 		<div class="gallery__img--wrap"><img src="img/gallerie/bil1.jpg" alt="gallery_pic2" class="gallery__img" /></div>
+		 		<div class="gallery__img--wrap"><img src="img/gallery.png" alt="gallery_pic" class="gallery__img" /></div>
+		 		<div class="gallery__img--wrap"><img src="img/header.png" alt="gallery_pic" class="gallery__img" /></div>
+                <div class="gallery__img--wrap"><img src="img/billard.png" alt="gallery_pic" class="gallery__img" /></div>
 		 	</div> 	
 		</section>
 
-		<section id="speisekarte" class="section speisekarte">
+		<section id="speisekarte" class="section section speisekarte">
 			<h2 class="section__title">~ Speisekarte ~</h2>
 
 			<div class="carousel carousel--menu owl-carousel">
-
 				<div class="carousel__item">
-					<h6>Salate</h6>
-					<img src="img/speisekarte/SPK2.png" alt="speisekarte" class="carousel__img" />
-				</div>
-				
-				<div class="carousel__item">
-					<h6>kalte Speisen</h6>
-					<img src="img/speisekarte/SPK3.png" alt="speisekarte" class="carousel__img" />
-				</div>
-				
-				<div class="carousel__item">
-					<h6>warme Speisen</h6>
-					<img src="img/speisekarte/SPK4.png" alt="speisekarte" class="carousel__img" />
-				</div>
-                
-                <div class="carousel__item">
-					<h6>warme Speisen</h6>
-					<img src="img/speisekarte/SPK5.png" alt="speisekarte" class="carousel__img" />
+					<h6>Warme Getränke</h6>
+					<img src="img/speisekarte_1.png" alt="speisekarte" class="carousel__img" />
 				</div>
 
 				<div class="carousel__item">
-					<h6>kleine Gerichte</h6>
-					<img src="img/speisekarte/SPK6.png" alt="speisekarte" class="carousel__img" />
-				</div>
-
-				<div class="carousel__item">
-					<h6>Dessert</h6>
-					<img src="img/speisekarte/SPK7.png" alt="speisekarte" class="carousel__img" />
-				</div>
-
-			</div>
-        </section>
-        <section id="getraenkekarte" class="section getraenkekarte">    
-            <h2 class="section__title">~ Getränkekarte ~</h2>
-            
-			<div class="carousel carousel--menu owl-carousel">
-                
-				<div class="carousel__item">
-					<h6>alkoholfreie Getränke</h6>
-					<img src="img/speisekarte/SPK8.png" alt="speisekarte" class="carousel__img" />
+					<h6>Alkoholfreie Getränke</h6>
+					<img src="img/speisekarte_2.png" alt="speisekarte" class="carousel__img" />
 				</div>
 
 				<div class="carousel__item">
 					<h6>Säfte</h6>
-					<img src="img/speisekarte/SPK9.png" alt="speisekarte" class="carousel__img" />
+					<img src="img/speisekarte_3.png" alt="speisekarte" class="carousel__img" />
 				</div>
 				
 				<div class="carousel__item">
 					<h6>Biere</h6>
-					<img src="img/speisekarte/SPK10.png" alt="speisekarte" class="carousel__img" />
+					<img src="img/speisekarte_4.png" alt="speisekarte" class="carousel__img" />
 				</div>
 				
 				<div class="carousel__item">
 					<h6>Weine</h6>
-					<img src="img/speisekarte/SPK11.png" alt="speisekarte" class="carousel__img" />
+					<img src="img/speisekarte_5.png" alt="speisekarte" class="carousel__img" />
 				</div>
-                
-                <div class="carousel__item">
-					<h6>Weine</h6>
-					<img src="img/speisekarte/SPK12.png" alt="speisekarte" class="carousel__img" />
-				</div>
-
-				<div class="carousel__item">
-					<h6>Weine</h6>
-					<img src="img/speisekarte/SPK13.png" alt="speisekarte" class="carousel__img" />
-				</div>
-
-				<div class="carousel__item">
-					<h6>Weine</h6>
-					<img src="img/speisekarte/SPK14.png" alt="speisekarte" class="carousel__img" />
-				</div>
-				
-				<div class="carousel__item">
-					<h6>Spirituosen</h6>
-					<img src="img/speisekarte/SPK15.png" alt="speisekarte" class="carousel__img" />
-				</div>
-				
-                <div class="carousel__item">
-					<h6>Longdrinks</h6>
-					<img src="img/speisekarte/SPK16.png" alt="speisekarte" class="carousel__img" />
-				</div>
-
-				<div class="carousel__item">
-					<h6>warme Getränke</h6>
-					<img src="img/speisekarte/SPK17.png" alt="speisekarte" class="carousel__img" />
-				</div>
-                
 			</div>
-
-			<div class="section__links">
-            	<a href="img/speisekarte/SPEISEKARTE_PDF.pdf" target="_blank" rel="noopener" class="link">Speisekarte als PDF</a> |
-            	<a href="img/speisekarte/GETRAENKEKARTE_PDF.pdf" target="_blank" rel="noopener" class="link">Getränkekarte als PDF</a> |
-            	<a href="img/speisekarte/ZusatzundAllerg.pdf" target="_blank" rel="noopener" class="link">Zusatzstoffe &amp; Allergene</a>
-            </div>            
 		</section>
 
 		<footer id="kontakt" class="footer">
@@ -296,14 +201,14 @@
 				<div class="footer__info">
 					<h3>Schreiben Sie uns einfach...</h3>
 					<ul class="footer__text">
-						<li><img src="img/icon_marker.png" alt="marker" class="footer__icon"/> <a class="link" href="https://goo.gl/maps/wm7P3gXx2j52" target="_blank" >Egarten 1, 74211 Leingarten</a></li>
+						<li><img src="img/icon_marker.png" alt="marker" class="footer__icon"/> Egarten 1, 74211 Leingarten</li>
 						<li><img src="img/icon_phone.png" alt="phone" class="footer__icon" /> +49 (0)7131 6429757</li>
 						<li><img src="img/icon_email.png" alt="email" class="footer__icon" /> <a class="link" href="mailto:info@gastro-waldheim.de">info@gastro-waldheim.de</a></li>
 					</ul>
 			  </div>
 				<form class="form" action="mail.php" method="POST">
 					<div class="form__field">
-						<label for="name" class="form__label">Name/Telefon</label> 
+						<label for="name" class="form__label">Name</label> 
 						<input class="form__input" type="text" name="name">
 					</div>
 					<div class="form__field">
@@ -323,10 +228,10 @@
 					<div class="copyright">
 						<span>Copyright &copy; 2018 Waldheim Leingarten</span>
 						<a class="link" href="impressum.html">Impressum</a>
-						<a class="link" href="datenschutzerklaerung.html">Datenschutz</a>
+						<a class="link" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
 					</div>
 					
-					<div class="footer__top"><a class="link" href="#header">zurück zum Start</a></div>
+					<div class="footer__top"><a class="link" href="#header">Back to top</a></div>
 				</div>
 			</div>
 		</footer>

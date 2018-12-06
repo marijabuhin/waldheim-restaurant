@@ -1,1 +1,5 @@
-Wir haben Betriebsferien von 05.11.2018. - 19.11.2018.
+<h2 class="section__title" <p>~ News ~</p></h2>
+<h4 <p>am Samstag den 08.12.2018 haben wir eine geschlossene Gesellschaft</p></h4>
+<br>
+<h4 <p>das Waldheimteam wünscht Ihnen eine schöne Adventszeit</p></h4>
+<hr>

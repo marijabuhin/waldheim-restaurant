@@ -1,6 +1,6 @@
 .header {
 	grid-column: 1/span 12;
-	@include background('../img/header-new.png');
+	@include background('../img/hintergrund.png');
   background-size: cover;
 	height: 100vh;
 	position: relative;
@@ -18,7 +18,7 @@
   	text-align: center;
   	text-shadow: 2px 2px $black;
 
-  	@include breakpoint ($large) {
+  	@include breakpoint ($medium-tab) {
   		top: 3rem;
   	}
 
@@ -26,7 +26,7 @@
   		line-height: 1.1;
   		margin-bottom: 1rem;
 
-  		@include breakpoint ($large) {
+  		@include breakpoint ($medium-tab) {
   			line-height: 1.2;
   		}
   	}
@@ -40,7 +40,7 @@
 		top: 0;
 		margin: 0 auto;
 
-		@include breakpoint ($large) {
+		@include breakpoint ($medium-tab) {
 			top: calc(50% - 366px);
 		}
 	}
@@ -99,9 +99,14 @@
 		box-shadow: 2px 4px 10px 0 rgba($black, 0.25);
 		text-align: center;
 		transform: rotate(5deg);
+
+		@include breakpoint ($medium-tab) {
+			top: 5vh;
+		}
 	
 		@include breakpoint ($large) {
 			line-height: 25px;
+			top: 6vh;
 		}
 
 		@include breakpoint ($xlarge) {

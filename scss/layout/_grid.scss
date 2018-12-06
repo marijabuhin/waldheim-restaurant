@@ -116,6 +116,16 @@
       object-position: center;
     }
   }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    .link {
+      text-align: center;
+    }
+  }
 }
 
 .section--page {

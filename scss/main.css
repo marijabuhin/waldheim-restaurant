@@ -317,6 +317,18 @@ p {
         top: 0;
         left: calc(50% - 10.625rem); } }
 
+.section.restaurant .owl-dots {
+  position: static;
+  display: flex;
+  justify-content: center;
+  margin-top: 3.5rem; }
+
+.section.getraenkekarte .owl-dots, .section.speisekarte .owl-dots {
+  position: static !important;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .gallery {
   grid-column: 1/span 12;
   margin-top: -4rem;
@@ -532,6 +544,12 @@ p {
         height: 100%;
         object-fit: cover;
         object-position: center; } }
+  .section__links {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem; }
+    .section__links .link {
+      text-align: center; }
 
 @media only screen and (min-width: 1024px) {
   .section--page {
@@ -547,7 +565,7 @@ p {
 
 .header {
   grid-column: 1/span 12;
-  background-image: url("../img/header-new.png");
+  background-image: url("../img/hintergrund.png");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -564,13 +582,13 @@ p {
     line-height: 89px;
     text-align: center;
     text-shadow: 2px 2px #212121; }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 760px) {
       .header__title {
         top: 3rem; } }
     .header__title h1 {
       line-height: 1.1;
       margin-bottom: 1rem; }
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 760px) {
         .header__title h1 {
           line-height: 1.2; } }
   .header__content {
@@ -580,7 +598,7 @@ p {
     position: relative;
     top: 0;
     margin: 0 auto; }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 760px) {
       .header__content {
         top: calc(50% - 366px); } }
   .header__img {
@@ -625,9 +643,13 @@ p {
     box-shadow: 2px 4px 10px 0 rgba(33, 33, 33, 0.25);
     text-align: center;
     transform: rotate(5deg); }
+    @media only screen and (min-width: 760px) {
+      .header__text {
+        top: 5vh; } }
     @media only screen and (min-width: 1024px) {
       .header__text {
-        line-height: 25px; } }
+        line-height: 25px;
+        top: 6vh; } }
     @media only screen and (min-width: 1600px) {
       .header__text {
         top: 5vh; } }
@@ -819,3 +841,15 @@ p {
 
 .news {
   text-align: center; }
+  .news__text hr {
+    display: block;
+    width: 75%;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #c9c9c9;
+    margin-top: 2rem; }
+  @media only screen and (min-width: 1024px) {
+    .news__text hr {
+      margin-top: 3rem; } }
+
+/*# sourceMappingURL=main.css.map */

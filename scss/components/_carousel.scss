@@ -255,3 +255,23 @@
 	  }
 	}
 }
+
+.section.restaurant {
+	
+	.owl-dots {
+		position: static;
+	    display: flex;
+	    justify-content: center;
+	    margin-top: 3.5rem;
+	}
+}
+
+.section.getraenkekarte, .section.speisekarte {
+	
+	.owl-dots {
+		position: static!important;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
